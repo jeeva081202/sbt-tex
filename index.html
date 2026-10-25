@@ -1,0 +1,1219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="S.Bakkiyalaxmi Tex – handloom cotton sarees woven in Aundipatti, Theni, Tamil Nadu.">
+<link rel="icon" href="img/logo.png">
+<title>S.Bakkiyalaxmi Tex</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Kaushan+Script&family=Poppins:wght@300;400;500;600&family=Hind+Madurai:wght@400;500;600&display=swap">
+<style>
+/* Layout: the shop's own banner, made live. Deep handloom green and temple gold, brass-lamp glow, yellow brush badges; product pages on warm cotton ivory. One deliberate look. */
+:root{
+  --g9:#06190f; --g8:#0a2a1d; --g7:#0f3727; --g6:#164a35;
+  --gold:#d6a84a; --gold-d:#9a6c22; --gold-l:#f6dc93;
+  --goldgrad:linear-gradient(180deg,#fff2bf 0%,#f3d07a 38%,#c8922f 70%,#f0cf7c 100%);
+  --brush:#f4c534; --plum:#6d1d50;
+  --ivory:#fbf5e8; --ivory-2:#f3e9d4; --card:#fffdf7;
+  --ink:#1e1a12; --muted:#6f6352; --line:rgba(120,90,40,.2);
+  --on-g:#f6efdf; --on-g-m:rgba(246,239,223,.72);
+  --ok:#23804f; --err:#b23a1f;
+  --f-brand:"Cinzel","Hind Madurai","Trajan Pro",Georgia,serif;
+  --f-serif:"Cormorant Garamond","Hind Madurai",Georgia,"Times New Roman",serif;
+  --f-script:"Great Vibes","Hind Madurai","Brush Script MT",cursive;
+  --f-brush:"Kaushan Script","Brush Script MT",cursive;
+  --f-ui:"Poppins","Hind Madurai","Segoe UI",system-ui,sans-serif;
+  --f-ta:"Hind Madurai","Noto Sans Tamil",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--f-ui);font-size:15.5px;line-height:1.65;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:70;background:var(--g9)}
+.wrap{max-width:1280px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+img{display:block;max-width:100%}
+h1,h2,h3,h4{margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0;padding:0}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.gold-text{background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.price{font-variant-numeric:tabular-nums;font-weight:600}
+.mrp{color:var(--muted);text-decoration:line-through;font-size:.85em;margin-left:.5em;font-weight:400}
+.off{color:var(--ok);font-size:.8em;margin-left:.5em;font-weight:600}
+.ta{font-family:var(--f-ta)}
+
+/* damask pattern used on green grounds */
+.damask{background-color:var(--g8);background-image:
+  radial-gradient(ellipse at 18% 40%,rgba(255,190,90,.16),transparent 45%),
+  radial-gradient(ellipse at 85% 10%,rgba(255,200,110,.10),transparent 40%),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23d6a84a' stroke-opacity='.09' stroke-width='1.2'%3E%3Cpath d='M60 12c14 14 14 34 0 48C46 46 46 26 60 12zM60 60c14 14 14 34 0 48-14-14-14-34 0-48z'/%3E%3Cpath d='M12 60c14-14 34-14 48 0-14 14-34 14-48 0zM60 60c14-14 34-14 48 0-14 14-34 14-48 0z'/%3E%3Ccircle cx='60' cy='60' r='5'/%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3Ccircle cx='120' cy='0' r='10'/%3E%3Ccircle cx='0' cy='120' r='10'/%3E%3Ccircle cx='120' cy='120' r='10'/%3E%3C/g%3E%3C/svg%3E")}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;padding:.95em 1.8em;border-radius:999px;font-family:var(--f-ui);font-weight:600;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;transition:transform .3s var(--ease),box-shadow .3s,background .3s,color .3s;position:relative;overflow:hidden}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:linear-gradient(180deg,#f7dc8c,#d6a84a 55%,#b9852c);color:#2a1a04;box-shadow:0 8px 22px -10px rgba(214,168,74,.9),inset 0 1px 0 rgba(255,255,255,.6)}
+.btn-gold::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);transform:skewX(-20deg);transition:left .7s}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-gold:hover::after{left:130%}
+.btn-line{border:1.5px solid var(--gold);color:var(--gold-l)}
+.btn-line:hover{background:rgba(214,168,74,.14)}
+.btn-green{background:var(--g8);color:var(--gold-l)}
+.btn-green:hover{background:var(--g6)}
+.btn-ol{border:1.5px solid var(--g8);color:var(--g8)}
+.btn-ol:hover{background:var(--g8);color:var(--gold-l)}
+
+/* ornament heading (gold flourish lines like the banner) */
+.orn{display:flex;align-items:center;justify-content:center;gap:.9rem}
+.orn::before,.orn::after{content:"";height:10px;width:min(90px,16vw);background:
+  radial-gradient(circle at 50% 50%,var(--gold) 2.5px,transparent 3px) center/10px 10px no-repeat,
+  linear-gradient(var(--gold),var(--gold)) center/100% 1px no-repeat}
+.sec-h{text-align:center;display:grid;justify-items:center;gap:.4rem;margin-bottom:2.6rem}
+.sec-h .script{font-family:var(--f-script);font-size:clamp(1.6rem,3vw,2.2rem);color:var(--gold-d);line-height:1}
+.sec-h h2{font-family:var(--f-brand);font-weight:700;font-size:clamp(1.7rem,3.6vw,2.7rem);letter-spacing:.06em;color:var(--g8);line-height:1.15}
+.sec-h p{color:var(--muted);max-width:56ch;margin-top:.5rem}
+.on-green .sec-h .script{color:var(--gold-l)}
+.on-green .sec-h h2{background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.on-green .sec-h p{color:var(--on-g-m)}
+section.blk{padding-block:clamp(3.6rem,7vw,6rem)}
+
+/* ===== top bar + header ===== */
+.topbar{background:var(--g9);color:var(--gold-l);font-size:.78rem;text-align:center;padding-block:.5rem;letter-spacing:.04em;border-bottom:1px solid rgba(214,168,74,.25)}
+.topbar b{color:#fff}
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--g8);border-bottom:1px solid rgba(214,168,74,.35);transition:box-shadow .3s}
+header.site.scrolled{box-shadow:0 10px 30px -12px rgba(0,0,0,.55)}
+.hdr{display:flex;align-items:center;gap:1rem;height:78px}
+.logo{display:flex;align-items:center;gap:.7rem;min-width:0}
+.logo img{height:52px;width:auto;flex:none}
+.logo .nm{font-family:var(--f-brand);font-weight:700;font-size:1.06rem;letter-spacing:.04em;line-height:1.05;white-space:nowrap}
+.logo .nm small{display:block;font-family:var(--f-serif);font-weight:600;font-size:.82rem;letter-spacing:.06em;color:var(--on-g);-webkit-text-fill-color:var(--on-g)}
+nav.main{margin-left:auto;display:flex;gap:1.7rem}
+nav.main a{color:var(--on-g);font-size:.8rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;position:relative;padding-block:.4rem;transition:color .3s}
+nav.main a::after{content:"";position:absolute;left:50%;right:50%;bottom:0;height:2px;background:var(--gold);transition:left .35s var(--ease),right .35s var(--ease)}
+nav.main a:hover{color:var(--gold-l)}
+nav.main a:hover::after{left:0;right:0}
+.icons{display:flex;gap:.25rem;margin-left:1.2rem}
+.ib{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;position:relative;color:var(--gold-l);transition:background .3s}
+.ib:hover{background:rgba(214,168,74,.16)}
+.ib svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.6}
+.badge{position:absolute;top:1px;right:0;min-width:19px;height:19px;border-radius:10px;background:var(--brush);color:#2a1a04;font-size:.68rem;font-weight:700;display:grid;place-items:center;padding:0 4px}
+.badge.bump{animation:bump .5s var(--ease)}
+@keyframes bump{40%{transform:scale(1.5)}}
+#menuBtn{display:none}
+@media (max-width:1060px){nav.main{display:none}#menuBtn{display:grid}.icons{margin-left:auto}}
+@media (max-width:520px){.logo img{height:40px}.logo .nm{font-size:.8rem}.logo .nm small{font-size:.7rem}.hdr{height:66px}.ib{width:38px;height:38px}}
+
+/* mobile menu */
+#menu{position:fixed;inset:0;z-index:90;visibility:hidden;transition:visibility 0s .45s}
+#menu.open{visibility:visible;transition:none}
+#menu .scrim{position:absolute;inset:0;background:rgba(3,12,8,.6);opacity:0;transition:opacity .4s}
+#menu.open .scrim{opacity:1}
+#menu .pnl{position:absolute;top:0;bottom:0;right:0;width:min(340px,86%);transform:translateX(100%);transition:transform .45s var(--ease);display:flex;flex-direction:column;padding:calc(18px + env(safe-area-inset-top,0px)) max(22px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) 26px;color:var(--on-g)}
+#menu.open .pnl{transform:none}
+#menu .pnl img{width:150px;margin:0 auto 1.6rem}
+#menu nav{display:grid}
+#menu nav a{font-family:var(--f-serif);font-size:1.5rem;font-weight:600;padding-block:.6rem;border-bottom:1px solid rgba(214,168,74,.2)}
+#menu nav a:hover{color:var(--gold-l)}
+#menu .x{position:absolute;top:calc(10px + env(safe-area-inset-top,0px));right:10px}
+#menu .ta{margin-top:auto;color:var(--gold-l);text-align:center}
+
+/* ===== HERO (the banner, live) ===== */
+.hero{position:relative;color:var(--on-g);overflow:hidden;isolation:isolate}
+.hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:2rem;align-items:center;padding-block:3rem 2.4rem}
+.hero .lamp{position:absolute;z-index:-1;width:420px;height:420px;left:-120px;top:-60px;border-radius:50%;background:radial-gradient(circle,rgba(255,196,96,.28),transparent 65%);animation:glow 5s ease-in-out infinite}
+@keyframes glow{50%{opacity:.6;transform:scale(1.08)}}
+.h-logo{width:min(210px,46vw);margin-bottom:.4rem}
+.h-script{font-family:var(--f-script);font-size:clamp(1.7rem,3.2vw,2.5rem);color:var(--gold-l);line-height:1.1;transform:rotate(-4deg);transform-origin:left;margin-bottom:.6rem}
+.hero h1{font-family:var(--f-brand);font-weight:800;font-size:clamp(2.1rem,5.4vw,4.4rem);line-height:1.02;letter-spacing:.01em}
+.hero h1 .gold-text{background-size:100% 100%;position:relative;display:inline-block;filter:drop-shadow(0 3px 0 rgba(60,35,5,.55))}
+.shine{position:relative;display:inline-block;overflow:hidden}
+.shine::after{content:"";position:absolute;inset:-10% auto -10% -40%;width:30%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shine 6s ease-in-out 1.2s infinite;mix-blend-mode:overlay;pointer-events:none}
+@keyframes shine{0%{left:-40%}22%,100%{left:130%}}
+.h-sub{display:flex;align-items:center;gap:.8rem;margin-top:.9rem;font-family:var(--f-serif);font-weight:600;font-size:clamp(1.5rem,3vw,2.3rem);color:#fff}
+.h-sub::before,.h-sub::after{content:"";width:46px;height:12px;background:radial-gradient(circle,var(--gold) 2.5px,transparent 3px) center/12px 12px no-repeat,linear-gradient(var(--gold),var(--gold)) center/100% 1px no-repeat;flex:none}
+.h-tags{display:flex;gap:1rem;margin-top:1rem;padding-block:.55rem;border-block:1px solid rgba(214,168,74,.55);width:fit-content;font-size:.95rem;letter-spacing:.06em}
+.h-tags span+span::before{content:"|";color:var(--gold);margin-right:1rem}
+.h-addr{display:flex;gap:.8rem;align-items:flex-start;margin-top:1.3rem;font-size:.95rem;line-height:1.5}
+.h-addr i{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--gold);display:grid;place-items:center;flex:none}
+.h-addr i svg{width:18px;height:18px;fill:var(--gold-l)}
+.h-addr b{color:var(--brush);font-weight:600;letter-spacing:.02em}
+.h-cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.8rem}
+.h-art{position:relative;justify-self:center;width:min(440px,100%)}
+.arch{position:relative;aspect-ratio:452/640;border-radius:999px 999px 18px 18px;overflow:hidden;border:3px solid transparent;background:linear-gradient(var(--g8),var(--g8)) padding-box,var(--goldgrad) border-box;box-shadow:0 30px 60px -25px rgba(0,0,0,.8),0 0 0 8px rgba(214,168,74,.12)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 0%;transform:scale(1.08);transition:transform 1.4s var(--ease)}
+.loaded .arch img{transform:scale(1)}
+.medal{position:absolute;left:-46px;bottom:70px;width:clamp(110px,14vw,150px);aspect-ratio:1;border-radius:50%;overflow:hidden;border:4px solid transparent;background:linear-gradient(#000,#000) padding-box,var(--goldgrad) border-box;box-shadow:0 18px 40px -12px rgba(0,0,0,.7);animation:float 6s ease-in-out infinite}
+.medal img{width:100%;height:100%;object-fit:cover}
+.brushb{position:absolute;right:-26px;top:34px;z-index:2;transform:rotate(-8deg);padding:.9rem 1.4rem .8rem;background:var(--brush);color:#2a1a04;font-family:var(--f-brush);font-size:clamp(1rem,1.7vw,1.3rem);line-height:1.05;text-align:center;border-radius:46% 54% 50% 50%/60% 40% 60% 40%;box-shadow:0 12px 26px -10px rgba(0,0,0,.6);animation:float 5s ease-in-out .6s infinite}
+.brushb small{display:block;font-size:.72em}
+.occ{position:absolute;right:-14px;bottom:24px;z-index:2;display:flex;align-items:center;gap:.6rem;background:var(--brush);color:#2a1a04;padding:.6rem 1.1rem;border-radius:40px 60px 50px 70px/60px 40px 70px 50px;font-family:var(--f-serif);font-weight:700;font-size:1.05rem;line-height:1.1;box-shadow:0 12px 26px -10px rgba(0,0,0,.6);transform:rotate(-3deg)}
+.occ svg{width:28px;height:28px;flex:none}
+@keyframes float{50%{translate:0 -10px}}
+/* features bar from the banner */
+.feats{border-top:1px solid rgba(214,168,74,.35);background:linear-gradient(180deg,rgba(6,25,15,.2),rgba(6,25,15,.7))}
+.feats .wrap{display:grid;grid-template-columns:repeat(5,1fr);padding-block:1.1rem}
+.ft{display:flex;flex-direction:column;align-items:center;gap:.35rem;text-align:center;font-size:.82rem;line-height:1.3;padding-inline:.4rem;position:relative}
+.ft+.ft::before{content:"";position:absolute;left:0;top:10%;bottom:10%;width:1px;background:linear-gradient(transparent,var(--gold),transparent)}
+.ft svg{width:34px;height:34px;fill:none;stroke:var(--gold-l);stroke-width:1.3}
+.ft b{font-weight:500}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;padding-block:2rem 2rem;gap:2.6rem}
+  .h-art{order:-1;width:min(320px,78%)}
+  .medal{left:-30px;bottom:40px}
+  .brushb{right:-24px;top:16px}
+  .occ{right:-20px;bottom:10px;font-size:.9rem}
+  .hero .txt{text-align:center;display:flex;flex-direction:column;align-items:center}
+  .h-script{transform:rotate(-3deg);transform-origin:center}
+  .h-addr{text-align:left}
+  .h-cta{justify-content:center}
+  .h-logo{display:none}
+  .feats .wrap{grid-template-columns:repeat(3,1fr);row-gap:1rem}
+  .ft:nth-child(4)::before{display:none}
+}
+@media (max-width:600px){.grid .custom{grid-column:1/-1}.h-sub::before,.h-sub::after{display:none}}
+@media (max-width:420px){.h-tags{gap:.5rem;font-size:.8rem}.h-tags span+span::before{margin-right:.5rem}.feats .wrap{grid-template-columns:repeat(2,1fr)}.ft:nth-child(3)::before,.ft:nth-child(5)::before{display:none}.ft:nth-child(4)::before{display:block}.ft:last-child{grid-column:1/-1}}
+
+/* ===== product grid ===== */
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-bottom:2.2rem}
+.chip{padding:.55em 1.2em;border-radius:999px;border:1.5px solid var(--line);background:var(--card);font-size:.82rem;font-weight:500;transition:all .3s}
+.chip:hover{border-color:var(--gold)}
+.chip[aria-pressed="true"]{background:var(--g8);border-color:var(--g8);color:var(--gold-l)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,30px)}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.pc{background:var(--card);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;min-width:0;border:1px solid var(--line);box-shadow:0 14px 34px -26px rgba(70,45,10,.55);transition:transform .45s var(--ease),box-shadow .45s,border-color .45s}
+.pc:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 28px 50px -28px rgba(70,45,10,.7)}
+.pc .im{position:relative;aspect-ratio:4/5;overflow:hidden;cursor:pointer;background:var(--ivory-2)}
+.pc .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .6s,transform 1s var(--ease)}
+.pc .im img.b{opacity:0}
+.pc:hover .im img.b{opacity:1}
+.pc:hover .im img{transform:scale(1.04)}
+.tag{position:absolute;top:12px;left:12px;z-index:2;background:var(--g8);color:var(--gold-l);font-size:.66rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.35em .8em;border-radius:999px;border:1px solid var(--gold)}
+.tag.y{background:var(--brush);color:#2a1a04;border-color:var(--brush)}
+.heart{position:absolute;top:10px;right:10px;z-index:2;width:38px;height:38px;border-radius:50%;background:rgba(255,253,247,.94);display:grid;place-items:center;box-shadow:0 4px 12px -4px rgba(0,0,0,.3);transition:transform .3s}
+.heart:hover{transform:scale(1.12)}
+.heart svg{width:18px;height:18px;fill:none;stroke:var(--plum);stroke-width:1.8}
+.heart[aria-pressed="true"] svg{fill:var(--plum)}
+.pc .bd{padding:1rem 1.1rem 1.15rem;display:flex;flex-direction:column;gap:.15rem;flex:1}
+.pc .wv{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-d)}
+.pc .nm{font-family:var(--f-serif);font-weight:700;font-size:1.4rem;line-height:1.15;cursor:pointer;color:var(--g8)}
+.pc .pr-row{margin-top:.2rem;font-size:1.05rem}
+.pc .add{margin-top:auto;padding-top:.9rem}
+.pc .add .btn{width:100%;padding:.85em 1em}
+@media (max-width:520px){.pc .bd{padding:.8rem .8rem .9rem}.pc .nm{font-size:1.12rem}.pc .pr-row{font-size:.95rem}.off{display:none}.pc .add .btn{font-size:.7rem;letter-spacing:.03em}}
+.custom{border-radius:14px;padding:2rem 1.6rem;display:flex;flex-direction:column;justify-content:center;gap:1rem;color:var(--on-g);border:1px solid var(--gold);min-height:100%}
+.custom h3{font-family:var(--f-serif);font-weight:700;font-size:clamp(1.5rem,3vw,2rem);line-height:1.1}
+.custom h3 em{font-family:var(--f-script);font-style:normal;font-weight:400;color:var(--gold-l);font-size:1.3em;display:block}
+.custom p{color:var(--on-g-m);font-size:.92rem}
+.empty{grid-column:1/-1;text-align:center;padding:3rem 1rem;color:var(--muted)}
+.empty h3{font-family:var(--f-serif);font-size:1.9rem;color:var(--g8)}
+.note{text-align:center;margin:-1.2rem 0 1.8rem;color:var(--muted);font-size:.9rem}
+.note button{color:var(--plum);text-decoration:underline;margin-left:.4rem}
+
+/* ===== border medallions ===== */
+.medals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,3vw,40px)}
+.md{display:flex;flex-direction:column;align-items:center;gap:.9rem;text-align:center;color:var(--on-g)}
+.md .c{width:100%;max-width:220px;aspect-ratio:1;border-radius:50%;padding:5px;background:var(--goldgrad);box-shadow:0 20px 40px -20px rgba(0,0,0,.8);transition:transform .5s var(--ease)}
+.md .c span{display:block;width:100%;height:100%;border-radius:50%;overflow:hidden;border:3px solid var(--g8)}
+.md .c img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.md:hover .c{transform:translateY(-6px) rotate(-3deg)}
+.md:hover .c img{transform:scale(1.12)}
+.md b{font-family:var(--f-serif);font-weight:700;font-size:1.35rem;line-height:1.1;color:var(--gold-l)}
+.md small{color:var(--on-g-m);font-size:.82rem}
+@media (max-width:760px){.medals{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:2rem}}
+
+/* ===== colours ===== */
+.swatches{display:flex;flex-wrap:wrap;justify-content:center;gap:1.4rem 1.8rem}
+.sw{display:flex;flex-direction:column;align-items:center;gap:.5rem;font-size:.86rem;font-weight:500}
+.sw i{width:84px;height:84px;border-radius:50%;padding:3px;background:var(--goldgrad);display:block;transition:transform .4s var(--ease),box-shadow .4s}
+.sw i img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:2px solid var(--ivory)}
+.sw small{color:var(--muted);font-size:.72rem;font-weight:400;margin-top:-.4rem}
+.sw:hover i{transform:translateY(-5px) scale(1.04)}
+.sw[aria-pressed="true"] i{box-shadow:0 0 0 3px var(--ivory),0 0 0 5px var(--g8)}
+
+/* ===== occasion banner ===== */
+.promo{position:relative}
+.promo .frame{border-radius:18px;overflow:hidden;padding:4px;background:var(--goldgrad);box-shadow:0 40px 70px -40px rgba(40,30,10,.8)}
+.promo .frame img{width:100%;border-radius:14px;aspect-ratio:1600/901;object-fit:cover}
+.promo .cta{display:flex;justify-content:center;margin-top:-28px;position:relative;z-index:2}
+.promo .cta .btn{padding:1.1em 2.2em}
+
+/* ===== why ===== */
+.why{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.2rem}
+.wy{border:1px solid rgba(214,168,74,.35);border-radius:14px;padding:1.6rem 1.3rem;color:var(--on-g);background:rgba(6,25,15,.35);transition:border-color .4s,transform .4s var(--ease)}
+.wy:hover{border-color:var(--gold);transform:translateY(-4px)}
+.wy svg{width:40px;height:40px;fill:none;stroke:var(--gold-l);stroke-width:1.3;margin-bottom:.9rem}
+.wy h3{font-family:var(--f-serif);font-weight:700;font-size:1.4rem;color:var(--gold-l);line-height:1.15;margin-bottom:.4rem}
+.wy p{color:var(--on-g-m);font-size:.9rem}
+@media (max-width:900px){.why{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.why{grid-template-columns:1fr}}
+
+/* ===== story ===== */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.story .ph{position:relative}
+.story .ph .f{border-radius:16px;overflow:hidden;padding:4px;background:var(--goldgrad)}
+.story .ph .f img{border-radius:12px;width:100%;aspect-ratio:4/3;object-fit:cover}
+.story .ph .f2{position:absolute;right:-14px;bottom:-30px;width:42%;border-radius:50%;padding:4px;background:var(--goldgrad);box-shadow:0 20px 40px -18px rgba(0,0,0,.6)}
+.story .ph .f2 img{border-radius:50%;aspect-ratio:1;object-fit:cover}
+.story .script{font-family:var(--f-script);font-size:2rem;color:var(--gold-d)}
+.story h2{font-family:var(--f-brand);font-weight:700;font-size:clamp(1.7rem,3.4vw,2.5rem);color:var(--g8);line-height:1.15;margin-top:.2rem}
+.story p.t{color:var(--muted);margin-top:1rem;max-width:54ch}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin-top:1.8rem}
+.facts div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem .8rem;text-align:center}
+.facts b{display:block;font-family:var(--f-brand);font-weight:700;font-size:1.5rem;color:var(--g8);line-height:1.1}
+.facts span{font-size:.76rem;color:var(--muted)}
+@media (max-width:860px){.story{grid-template-columns:1fr}.story .ph{margin-bottom:1.6rem}}
+
+/* ===== contact ===== */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(1.6rem,4vw,3.5rem);align-items:start}
+.cinfo{color:var(--on-g);display:grid;gap:1.3rem}
+.ci{display:grid;grid-template-columns:48px 1fr;gap:1rem;align-items:start}
+.ci i{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--gold);display:grid;place-items:center}
+.ci i svg{width:20px;height:20px;fill:none;stroke:var(--gold-l);stroke-width:1.5}
+.ci b{display:block;color:var(--gold-l);font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
+.ci span{color:var(--on-g-m)}
+.fcard{background:var(--ivory);border-radius:16px;padding:clamp(1.4rem,3vw,2.2rem);border:2px solid var(--gold);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.fcard h3{font-family:var(--f-serif);font-weight:700;font-size:1.8rem;color:var(--g8);margin-bottom:1rem}
+.field{display:flex;flex-direction:column;gap:.3rem;margin-bottom:1rem;min-width:0}
+.field label{font-size:.8rem;font-weight:500;color:var(--muted)}
+.field input,.field textarea,.field select{font:inherit;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:.75em .9em;width:100%;transition:border-color .3s,box-shadow .3s}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(214,168,74,.2)}
+.field .err{color:var(--err);font-size:.76rem;min-height:1em}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media (max-width:820px){.contact{grid-template-columns:1fr}.row2{grid-template-columns:1fr;gap:0}}
+
+/* ===== footer ===== */
+footer{color:var(--on-g);padding-top:3.4rem;padding-bottom:calc(1.4rem + env(safe-area-inset-bottom,0px));border-top:2px solid var(--gold)}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:2rem}
+.fgrid img{width:150px}
+footer h4{font-family:var(--f-brand);font-size:.86rem;letter-spacing:.12em;color:var(--gold-l);margin-bottom:.9rem}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:.45rem;font-size:.9rem;color:var(--on-g-m)}
+footer a:hover{color:var(--gold-l)}
+.fbot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin-top:2.4rem;padding-top:1.2rem;border-top:1px solid rgba(214,168,74,.25);font-size:.78rem;color:var(--on-g-m)}
+@media (max-width:820px){.fgrid{grid-template-columns:1fr 1fr}.fgrid>div:first-child{grid-column:1/-1}}
+
+/* ===== views ===== */
+.view{display:none}
+.view.on{display:block;animation:viewIn .5s var(--ease)}
+@keyframes viewIn{from{opacity:0;transform:translateY(14px)}}
+.page{padding-block:2rem 4.5rem}
+.crumbs{font-size:.82rem;color:var(--muted);margin-bottom:1.6rem;display:flex;gap:.5rem;flex-wrap:wrap}
+.crumbs button{color:var(--g8);font-weight:500}
+.crumbs button:hover{color:var(--gold-d)}
+.pdp{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(1.6rem,4vw,4rem)}
+.gal{display:grid;grid-template-columns:82px 1fr;gap:12px;align-self:start;position:sticky;top:100px}
+.thumbs{display:flex;flex-direction:column;gap:10px}
+.thumbs button{aspect-ratio:4/5;border-radius:10px;overflow:hidden;border:2px solid transparent;opacity:.7;transition:all .3s}
+.thumbs button[aria-current="true"]{border-color:var(--gold);opacity:1}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.main-im{aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:var(--ivory-2);cursor:zoom-in;border:1px solid var(--line)}
+.main-im img{width:100%;height:100%;object-fit:cover;transition:transform .45s var(--ease)}
+.main-im.zoom{cursor:zoom-out}
+.main-im.zoom img{transform:scale(2.1)}
+.info .wv{font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d)}
+.info h1{font-family:var(--f-serif);font-weight:700;font-size:clamp(2.1rem,4vw,3.1rem);line-height:1.05;color:var(--g8);margin-top:.3rem}
+.info .desc{color:var(--muted);margin-top:.8rem;max-width:48ch}
+.info .pbig{font-size:1.7rem;margin-top:1.2rem;color:var(--g8)}
+.tax{font-size:.8rem;color:var(--muted)}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;background:var(--card)}
+.qty button{width:40px;height:40px;font-size:1.15rem;color:var(--g8)}
+.qty output{min-width:28px;text-align:center;font-weight:600;font-variant-numeric:tabular-nums}
+.buy{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.4rem}
+.buy .btn{flex:1 1 190px;padding-block:1.05em}
+.perks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;margin-top:1.5rem}
+.perks div{text-align:center;border:1px solid var(--line);border-radius:12px;padding:.8rem .4rem;font-size:.76rem;color:var(--muted);background:var(--card)}
+.perks b{display:block;color:var(--g8);font-size:.82rem}
+.acc{margin-top:1.6rem}
+.acc details{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;cursor:pointer;padding:1rem 0;display:flex;justify-content:space-between;font-weight:600;color:var(--g8)}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"+";color:var(--gold-d);font-size:1.3rem;line-height:1;transition:transform .3s}
+.acc details[open] summary::after{transform:rotate(45deg)}
+.acc table{width:100%;border-collapse:collapse;margin-bottom:1rem;font-size:.92rem}
+.acc td{padding:.45rem 0;border-bottom:1px dashed var(--line)}
+.acc td:first-child{color:var(--muted);width:40%}
+.acc p{color:var(--muted);padding-bottom:1rem}
+@media (max-width:880px){.pdp{grid-template-columns:1fr}.gal{position:static;grid-template-columns:1fr}.thumbs{flex-direction:row;order:2}.thumbs button{width:70px}}
+.more-h{margin-top:4rem}
+
+/* cart */
+#cart{position:fixed;inset:0;z-index:95;visibility:hidden;transition:visibility 0s .5s}
+#cart.open{visibility:visible;transition:none}
+#cart .scrim{position:absolute;inset:0;background:rgba(3,12,8,.55);opacity:0;transition:opacity .4s}
+#cart.open .scrim{opacity:1}
+#cart .pnl{position:absolute;top:0;right:0;bottom:0;width:min(420px,100%);background:var(--ivory);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .5s var(--ease);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-right:env(safe-area-inset-right,0px)}
+#cart.open .pnl{transform:none}
+.pnl-h{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.3rem;color:var(--gold-l)}
+.pnl-h h3{font-family:var(--f-serif);font-weight:700;font-size:1.7rem}
+.cl{flex:1;overflow:auto;padding:1.1rem 1.3rem;display:grid;gap:1.1rem;align-content:start}
+.cli{display:grid;grid-template-columns:76px 1fr auto;gap:.9rem;padding-bottom:1.1rem;border-bottom:1px solid var(--line)}
+.cli img{width:76px;aspect-ratio:4/5;object-fit:cover;border-radius:8px}
+.cli .n{font-family:var(--f-serif);font-weight:700;font-size:1.15rem;line-height:1.15;color:var(--g8)}
+.cli .qty button{width:32px;height:32px}
+.rm{font-size:.76rem;color:var(--muted);text-decoration:underline;margin-left:.6rem}
+.cf{border-top:1px solid var(--line);padding:1.1rem 1.3rem;display:grid;gap:.55rem;background:var(--card)}
+.line{display:flex;justify-content:space-between;gap:1rem;font-variant-numeric:tabular-nums}
+.line.tot{font-weight:700;font-size:1.1rem;color:var(--g8)}
+.meter{font-size:.8rem;color:var(--muted)}
+.meter i{display:block;height:5px;border-radius:3px;background:var(--ivory-2);margin-top:.35rem;overflow:hidden}
+.meter i b{display:block;height:100%;background:linear-gradient(90deg,var(--gold-d),var(--gold));transition:width .6s var(--ease)}
+.empty-c{text-align:center;padding:3.5rem 1rem;color:var(--muted);display:grid;gap:.7rem;justify-items:center}
+.empty-c h4{font-family:var(--f-serif);font-size:1.7rem;color:var(--g8)}
+
+/* checkout */
+.co{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(1.6rem,4vw,4rem)}
+.co h2{font-family:var(--f-serif);font-weight:700;font-size:1.9rem;color:var(--g8);margin-bottom:1rem}
+.steps{display:flex;gap:.5rem;margin-bottom:1.6rem;flex-wrap:wrap}
+.steps span{padding:.4em 1em;border-radius:999px;font-size:.76rem;font-weight:600;background:var(--ivory-2);color:var(--muted)}
+.steps .on{background:var(--g8);color:var(--gold-l)}
+.demo{background:#fff6d6;border:1px solid var(--brush);border-radius:10px;padding:.8rem 1rem;font-size:.85rem;margin-bottom:1.1rem}
+.pms{display:grid;gap:.6rem;margin-bottom:1.4rem}
+.pm{display:flex;align-items:center;gap:1rem;padding:1rem;border:1.5px solid var(--line);border-radius:12px;background:var(--card);cursor:pointer;transition:border-color .3s}
+.pm:has(input:checked){border-color:var(--gold);box-shadow:0 0 0 3px rgba(214,168,74,.18)}
+.pm input{accent-color:var(--g8);width:18px;height:18px;margin:0}
+.pm b{display:block;font-weight:600}
+.pm span{font-size:.8rem;color:var(--muted)}
+.sum{background:var(--card);border:1.5px solid var(--gold);border-radius:16px;padding:1.5rem;align-self:start;position:sticky;top:100px;display:grid;gap:.7rem}
+.sum h3{font-family:var(--f-serif);font-weight:700;font-size:1.6rem;color:var(--g8)}
+.si{display:grid;grid-template-columns:54px 1fr auto;gap:.8rem;align-items:center;font-size:.9rem}
+.si img{width:54px;aspect-ratio:4/5;object-fit:cover;border-radius:6px}
+@media (max-width:880px){.co{grid-template-columns:1fr}.sum{position:static;order:-1}}
+
+#pay{position:fixed;inset:0;z-index:120;background:rgba(3,12,8,.65);display:grid;place-items:center;padding:18px}
+#pay .box{width:min(390px,100%);background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.45);animation:viewIn .4s var(--ease)}
+#pay .bh{padding:1rem 1.2rem;display:flex;justify-content:space-between;align-items:center;color:var(--on-g)}
+#pay .bh small{display:block;color:var(--gold-l);font-size:.74rem}
+#pay .bb{padding:1.8rem 1.2rem;text-align:center;display:grid;gap:1rem}
+.spin{width:46px;height:46px;border-radius:50%;border:3px solid var(--ivory-2);border-top-color:var(--gold);margin:0 auto;animation:sp .9s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.tick{width:74px;height:74px;border-radius:50%;background:var(--goldgrad);display:grid;place-items:center;margin:0 auto;box-shadow:0 12px 30px -10px rgba(154,108,34,.8)}
+.tick svg{width:34px;height:34px;fill:none;stroke:var(--g8);stroke-width:2.8;stroke-dasharray:30;stroke-dashoffset:30;animation:draw .6s .2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.done{max-width:620px;margin:0 auto;text-align:center}
+.done h1{font-family:var(--f-serif);font-weight:700;font-size:clamp(2.2rem,5vw,3.2rem);color:var(--g8);margin:1.2rem 0 .3rem}
+.done .oid{font-weight:600;letter-spacing:.14em;color:var(--gold-d)}
+.done .rc{background:var(--card);border:1.5px solid var(--gold);border-radius:14px;padding:1.3rem;margin:1.6rem 0;text-align:left;display:grid;gap:.5rem}
+
+/* fly-to-bag */
+.fly{position:fixed;z-index:140;border-radius:12px;pointer-events:none;object-fit:cover;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .8s cubic-bezier(.5,-.2,.3,1),opacity .8s}
+
+#toast{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:130;transform:translate(-50%,180%);background:var(--g8);color:var(--gold-l);border:1px solid var(--gold);padding:.8rem 1.3rem;border-radius:999px;font-size:.88rem;transition:transform .5s var(--ease);max-width:calc(100% - 32px);text-align:center}
+#toast.show{transform:translate(-50%,0)}
+
+
+/* ===== v4 features ===== */
+html[lang="ta"] nav.main a,html[lang="ta"] .btn,html[lang="ta"] .sec-h h2,html[lang="ta"] .chip,html[lang="ta"] .tag{letter-spacing:0;text-transform:none}
+html[lang="ta"] .sec-h h2{font-family:var(--f-ta);font-weight:600}
+html[lang="ta"] .h-script,html[lang="ta"] .sec-h .script,html[lang="ta"] .story .script{font-family:var(--f-ta);font-size:1.15rem;font-weight:500;transform:none}
+html[lang="ta"] .pc .nm,html[lang="ta"] .info h1,html[lang="ta"] .story h2{font-family:var(--f-ta);font-weight:600}
+html[lang="ta"] .info h1{font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.3}
+html[lang="ta"] .pc .nm{font-size:1.08rem;line-height:1.35}
+
+/* offer bar */
+.topbar{display:flex;justify-content:center;align-items:center;gap:.4rem 1rem;flex-wrap:wrap;padding-inline:max(14px,env(safe-area-inset-left,0px))}
+.topbar .code{display:inline-flex;align-items:center;gap:.4rem;background:var(--brush);color:#2a1a04;font-weight:700;padding:.12em .7em;border-radius:999px;letter-spacing:.06em;font-size:.76rem}
+.topbar .code svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2}
+.cd{display:inline-flex;gap:.25rem;font-variant-numeric:tabular-nums}
+.cd b{background:rgba(214,168,74,.18);border:1px solid rgba(214,168,74,.4);border-radius:5px;padding:0 .35em;color:#fff;font-weight:600}
+
+/* language toggle */
+.lang{display:inline-flex;border:1px solid rgba(214,168,74,.55);border-radius:999px;padding:2px;margin-right:.3rem}
+.lang button{padding:.25em .65em;border-radius:999px;font-size:.72rem;font-weight:600;color:var(--gold-l);line-height:1.4}
+.lang button[aria-pressed="true"]{background:var(--gold);color:#2a1a04}
+@media (max-width:520px){.lang button{padding:.2em .5em;font-size:.66rem}.icons{gap:0}}
+
+/* search */
+#search{position:fixed;inset:0;z-index:96;visibility:hidden;transition:visibility 0s .4s}
+#search.open{visibility:visible;transition:none}
+#search .scrim{position:absolute;inset:0;background:rgba(3,12,8,.6);opacity:0;transition:opacity .35s}
+#search.open .scrim{opacity:1}
+#search .box{position:relative;max-width:720px;margin:calc(70px + env(safe-area-inset-top,0px)) auto 0;width:calc(100% - 32px);background:var(--ivory);border-radius:18px;border:2px solid var(--gold);overflow:hidden;transform:translateY(-20px);opacity:0;transition:transform .4s var(--ease),opacity .3s;box-shadow:0 40px 80px rgba(0,0,0,.45)}
+#search.open .box{transform:none;opacity:1}
+.s-in{display:flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-bottom:1px solid var(--line)}
+.s-in svg{width:22px;height:22px;fill:none;stroke:var(--gold-d);stroke-width:1.8;flex:none}
+.s-in input{flex:1;min-width:0;border:0;background:transparent;font:inherit;font-size:1.1rem;color:var(--ink);outline:none}
+.s-res{max-height:min(60vh,480px);overflow:auto;padding:.5rem}
+.s-it{display:grid;grid-template-columns:56px 1fr auto;gap:.9rem;align-items:center;padding:.6rem;border-radius:12px;width:100%;text-align:left}
+.s-it:hover,.s-it:focus-visible{background:var(--ivory-2)}
+.s-it img{width:56px;aspect-ratio:4/5;object-fit:cover;border-radius:8px}
+.s-it b{display:block;font-family:var(--f-serif);font-weight:700;font-size:1.15rem;color:var(--g8);line-height:1.2}
+.s-it small{color:var(--muted);font-size:.78rem}
+.s-hint{padding:1rem 1.2rem 1.3rem;color:var(--muted);font-size:.86rem}
+.s-hint .chips{justify-content:flex-start;margin:.6rem 0 0}
+
+/* modal (quick view, track) */
+.modal{position:fixed;inset:0;z-index:110;display:grid;place-items:center;padding:16px;visibility:hidden;transition:visibility 0s .4s}
+.modal.open{visibility:visible;transition:none}
+.modal .scrim{position:absolute;inset:0;background:rgba(3,12,8,.62);opacity:0;transition:opacity .35s}
+.modal.open .scrim{opacity:1}
+.modal .mbox{position:relative;width:min(880px,100%);max-height:calc(100vh - 32px);overflow:auto;background:var(--ivory);border-radius:18px;border:2px solid var(--gold);transform:scale(.94);opacity:0;transition:transform .45s var(--ease),opacity .3s;box-shadow:0 40px 90px rgba(0,0,0,.5)}
+.modal.open .mbox{transform:none;opacity:1}
+.modal .x{position:absolute;top:10px;right:10px;z-index:3;background:var(--g8)}
+.qv{display:grid;grid-template-columns:1fr 1fr}
+.qv .im{aspect-ratio:4/5;background:var(--ivory-2)}
+.qv .im img{width:100%;height:100%;object-fit:cover}
+.qv .bd{padding:2rem 1.6rem;display:flex;flex-direction:column;gap:.5rem}
+.qv h3{font-family:var(--f-serif);font-weight:700;font-size:2rem;line-height:1.1;color:var(--g8)}
+.qv p{color:var(--muted);font-size:.92rem}
+.qv .btns{display:grid;gap:.6rem;margin-top:auto;padding-top:1rem}
+@media (max-width:680px){.qv{grid-template-columns:1fr}.qv .im{aspect-ratio:1}}
+.trk{padding:2rem clamp(1.2rem,4vw,2.2rem)}
+.trk h3{font-family:var(--f-serif);font-weight:700;font-size:1.9rem;color:var(--g8)}
+.trk form{display:flex;gap:.6rem;margin:1rem 0 1.4rem;flex-wrap:wrap}
+.trk input{flex:1 1 200px;font:inherit;border:1.5px solid var(--line);border-radius:999px;padding:.7em 1.1em;background:var(--card);text-transform:uppercase}
+.trk input:focus{outline:none;border-color:var(--gold)}
+.olist{display:grid;gap:.6rem}
+.orow{display:flex;justify-content:space-between;gap:1rem;align-items:center;padding:.8rem 1rem;border:1.5px solid var(--line);border-radius:12px;background:var(--card);text-align:left;width:100%}
+.orow:hover{border-color:var(--gold)}
+.orow b{color:var(--g8)}
+.orow small{color:var(--muted);display:block}
+.tl{list-style:none;margin:1.4rem 0 0;padding:0;display:grid;gap:0}
+.tl li{display:grid;grid-template-columns:30px 1fr;gap:.9rem;position:relative;padding-bottom:1.3rem}
+.tl li:last-child{padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:14px;top:28px;bottom:0;width:2px;background:var(--line)}
+.tl li:last-child::before{display:none}
+.tl li.done::before{background:var(--gold)}
+.tl i{width:30px;height:30px;border-radius:50%;border:2px solid var(--line);background:var(--card);display:grid;place-items:center;position:relative;z-index:1}
+.tl li.done i{background:var(--goldgrad);border-color:var(--gold)}
+.tl li.done i::after{content:"";width:9px;height:5px;border-left:2px solid var(--g8);border-bottom:2px solid var(--g8);transform:rotate(-45deg) translate(1px,-1px)}
+.tl b{display:block;color:var(--g8)}
+.tl small{color:var(--muted)}
+.tl li.now b{color:var(--gold-d)}
+
+/* card extras */
+.qvb{position:absolute;left:50%;bottom:12px;z-index:2;transform:translate(-50%,16px);opacity:0;background:rgba(255,253,247,.95);color:var(--g8);border-radius:999px;padding:.55em 1.1em;font-size:.76rem;font-weight:600;display:inline-flex;align-items:center;gap:.4rem;white-space:nowrap;box-shadow:0 8px 20px -8px rgba(0,0,0,.4);transition:all .35s var(--ease)}
+.qvb svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8}
+.pc:hover .qvb,.pc .im:focus-within .qvb{opacity:1;transform:translate(-50%,0)}
+@media (hover:none){.qvb{opacity:1;transform:translate(-50%,0);padding:.45em .8em;font-size:.68rem}}
+.shop-tools{display:flex;justify-content:center;gap:.6rem;flex-wrap:wrap;margin:-1.2rem 0 2rem}
+.shop-tools select{font:inherit;font-size:.84rem;border:1.5px solid var(--line);border-radius:999px;padding:.5em 1em;background:var(--card);color:var(--ink)}
+
+/* product page extras */
+.pin{margin-top:1.4rem;border:1.5px dashed var(--gold);border-radius:12px;padding:1rem;background:var(--card)}
+.pin label{font-size:.82rem;font-weight:600;color:var(--g8);display:flex;align-items:center;gap:.4rem}
+.pin label svg{width:18px;height:18px;fill:none;stroke:var(--gold-d);stroke-width:1.7}
+.pin form{display:flex;gap:.5rem;margin-top:.5rem}
+.pin input{flex:1;min-width:0;font:inherit;border:1.5px solid var(--line);border-radius:999px;padding:.55em 1em;background:var(--ivory)}
+.pin input:focus{outline:none;border-color:var(--gold)}
+.pin .btn{padding:.6em 1.2em}
+.pin .res{font-size:.86rem;margin-top:.5rem;min-height:1.2em}
+.pin .res.ok{color:var(--ok)}.pin .res.bad{color:var(--err)}
+.btn-wa{background:#1f9d55;color:#fff;width:100%;margin-top:.8rem}
+.btn-wa:hover{background:#178a49}
+.btn-wa svg{width:18px;height:18px;fill:currentColor}
+
+/* checkout extras */
+.coupon{display:flex;gap:.5rem;margin-top:.3rem}
+.coupon input{flex:1;min-width:0;font:inherit;border:1.5px solid var(--line);border-radius:999px;padding:.55em 1em;background:var(--ivory);text-transform:uppercase}
+.coupon input:focus{outline:none;border-color:var(--gold)}
+.coupon .btn{padding:.55em 1.1em}
+.cmsg{font-size:.8rem;min-height:1.1em}
+.cmsg.ok{color:var(--ok)}.cmsg.bad{color:var(--err)}
+.codes{display:flex;gap:.4rem;flex-wrap:wrap}
+.codes button{font-size:.7rem;font-weight:600;border:1px dashed var(--gold-d);color:var(--gold-d);border-radius:999px;padding:.2em .7em}
+.gift{display:flex;gap:.7rem;align-items:center;padding:.9rem 1rem;border:1.5px solid var(--line);border-radius:12px;background:var(--card);cursor:pointer;margin-bottom:1.2rem}
+.gift input{accent-color:var(--g8);width:18px;height:18px;margin:0}
+.gift span{font-size:.8rem;color:var(--muted);display:block}
+.line.disc{color:var(--ok)}
+
+/* recently viewed */
+.recent{margin-top:3.4rem}
+.recent h3{font-family:var(--f-serif);font-weight:700;font-size:1.5rem;color:var(--g8);margin-bottom:1rem}
+.rrow{display:flex;gap:14px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.rc-it{flex:0 0 140px;text-align:left}
+.rc-it img{width:140px;aspect-ratio:4/5;object-fit:cover;border-radius:10px;border:1px solid var(--line);transition:transform .4s var(--ease)}
+.rc-it:hover img{transform:translateY(-4px)}
+.rc-it b{display:block;font-size:.84rem;font-weight:500;margin-top:.4rem;line-height:1.3}
+.rc-it small{color:var(--muted)}
+
+/* floating buttons */
+.fab{position:fixed;z-index:85;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.45);transition:transform .3s var(--ease),opacity .3s}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:26px;height:26px}
+.fab-wa{left:max(18px,env(safe-area-inset-left,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));background:#1f9d55;color:#fff}
+.fab-wa svg{fill:#fff}
+.fab-wa::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #1f9d55;animation:ping 2.4s ease-out infinite}
+@keyframes ping{0%{transform:scale(1);opacity:.8}80%,100%{transform:scale(1.7);opacity:0}}
+.fab-top{right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:46px;height:46px;background:var(--g8);border:1px solid var(--gold);color:var(--gold-l);opacity:0;pointer-events:none;transform:translateY(10px)}
+.fab-top.show{opacity:1;pointer-events:auto;transform:none}
+.fab-top svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}
+
+/* wishlist drawer reuses cart drawer styles */
+#wishD{position:fixed;inset:0;z-index:95;visibility:hidden;transition:visibility 0s .5s}
+#wishD.open{visibility:visible;transition:none}
+#wishD .scrim{position:absolute;inset:0;background:rgba(3,12,8,.55);opacity:0;transition:opacity .4s}
+#wishD.open .scrim{opacity:1}
+#wishD .pnl{position:absolute;top:0;right:0;bottom:0;width:min(420px,100%);background:var(--ivory);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .5s var(--ease);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-right:env(safe-area-inset-right,0px)}
+#wishD.open .pnl{transform:none}
+.wmove{font-size:.76rem;font-weight:600;color:var(--g8);text-decoration:underline}
+
+
+/* v4 layout fixes */
+nav.main{gap:1.25rem}
+nav.main a{font-size:.74rem;white-space:nowrap}
+@media (max-width:1280px){nav.main{display:none}#menuBtn{display:grid}.icons{margin-left:auto}}
+.pdp,.co{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
+.pdp>*,.co>*,.info,.gal{min-width:0}
+@media (max-width:880px){.pdp,.co{grid-template-columns:minmax(0,1fr)}}
+.menu-lang{display:none;justify-content:center;margin:1.4rem 0 0}
+@media (max-width:640px){.icons .lang,#trackBtn{display:none}.menu-lang{display:flex}}
+.sum{grid-template-columns:minmax(0,1fr)}
+.coupon input,.pin input,.trk input{width:100%}
+.icons{align-items:center}
+.menu-lang{width:fit-content;margin-inline:auto}
+.menu-lang button{font-size:.9rem;padding:.45em 1.1em}
+@media (max-width:420px){.logo{gap:.45rem}.logo img{height:36px}.logo .nm{font-size:.68rem;letter-spacing:0}.logo .nm small{display:block;font-size:.62rem}.ib{width:34px}}
+/* entrance + scroll reveal (only when script runs) */
+.js .in-h{opacity:0;transform:translateY(22px)}
+.loaded .in-h{opacity:1;transform:none;transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.loaded .in-h:nth-child(2){transition-delay:.08s}.loaded .in-h:nth-child(3){transition-delay:.16s}.loaded .in-h:nth-child(4){transition-delay:.24s}.loaded .in-h:nth-child(5){transition-delay:.32s}.loaded .in-h:nth-child(6){transition-delay:.4s}.loaded .in-h:nth-child(7){transition-delay:.48s}
+.js .rv{opacity:0;transform:translateY(30px)}
+.js .rv.seen{opacity:1;transform:none;transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.js .rv,.js .in-h{opacity:1;transform:none}}
+</style>
+
+</head>
+<body>
+<div class="topbar" id="offer">
+  <span id="offerTxt"><span data-i18n="offer">Deepavali Offer: extra 10% off with code</span></span>
+  <button class="code" data-copy="DEEPAVALI10" aria-label="Copy code DEEPAVALI10">DEEPAVALI10 <svg viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg></button>
+  <span><span data-i18n="ends">ends in</span> <span class="cd" id="cd"><b>--</b>d <b>--</b>h <b>--</b>m <b>--</b>s</span></span>
+</div>
+<header class="site damask" id="hdr">
+  <div class="wrap hdr">
+    <a class="logo" href="#top" data-go="top" aria-label="S.Bakkiyalaxmi Tex home">
+      <img src="img/logo.png" alt="SBT logo">
+      <span class="nm gold-text">S.BAKKIYALAXMI TEX<small data-i18n="hero_sub">Handloom Cotton Sarees</small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#top" data-go="top" data-i18n="nav_home">Home</a>
+      <a href="#shop" data-go="shop" data-i18n="nav_new">New Arrivals</a>
+      <a href="#borders" data-go="borders" data-i18n="nav_cat">Categories</a>
+      <a href="#colours" data-go="colours" data-i18n="nav_col">Shop by Colour</a>
+      <a href="#about" data-go="about" data-i18n="nav_story">Our Story</a>
+      <a href="#contact" data-go="contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="icons">
+      <div class="lang" role="group" aria-label="Language"><button data-lang="en" aria-pressed="true">EN</button><button data-lang="ta" aria-pressed="false">தமிழ்</button></div>
+      <button class="ib" id="searchBtn" aria-label="Search sarees"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+      <button class="ib" id="trackBtn" aria-label="Track order"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg></button>
+      <button class="ib" id="wishBtn" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span class="badge" id="wishCount" hidden>0</span></button>
+      <button class="ib" id="cartBtn" aria-label="Open bag"><svg viewBox="0 0 24 24"><path d="M3 4h2.5l2.2 11h10.6L20.5 7H7"/><circle cx="9.5" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg><span class="badge" id="cartCount" hidden>0</span></button>
+      <button class="ib" id="menuBtn" aria-label="Open menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div id="menu" aria-hidden="true">
+  <div class="scrim" data-close></div>
+  <div class="pnl damask" role="dialog" aria-label="Menu">
+    <button class="ib x" data-close aria-label="Close menu"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <img src="img/logo.png" alt="">
+    <nav>
+      <a href="#top" data-go="top" data-i18n="nav_home">Home</a>
+      <a href="#shop" data-go="shop" data-i18n="nav_new">New Arrivals</a>
+      <a href="#borders" data-go="borders" data-i18n="nav_cat">Categories</a>
+      <a href="#colours" data-go="colours" data-i18n="nav_col">Shop by Colour</a>
+      <a href="#about" data-go="about" data-i18n="nav_story">Our Story</a>
+      <a href="#contact" data-go="contact" data-i18n="nav_contact">Contact</a>
+      <a href="#track" data-track data-i18n="nav_track">Track Order</a>
+    </nav>
+    <div class="lang menu-lang" role="group" aria-label="Language"><button data-lang="en" aria-pressed="true">English</button><button data-lang="ta" aria-pressed="false">தமிழ்</button></div>
+    <p class="ta">கைத்தறி பருத்தி சேலைகள்</p>
+  </div>
+</div>
+
+<main id="top">
+<div class="view on" id="v-home">
+
+  <section class="hero damask" aria-label="S.Bakkiyalaxmi Tex handloom cotton sarees">
+    <div class="lamp" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="txt">
+        <img class="h-logo in-h" src="img/logo.png" alt="">
+        <p class="h-script in-h" data-i18n="hero_script">Traditional Weaves… Timeless Elegance…</p>
+        <h1 class="in-h"><span class="shine"><span class="gold-text">S.BAKKIYALAXMI TEX</span></span></h1>
+        <p class="h-sub in-h" data-i18n="hero_sub">Handloom Cotton Sarees</p>
+        <div class="h-tags in-h"><span data-i18n="tag1">Pure Cotton</span><span data-i18n="tag2">Traditional</span><span data-i18n="tag3">Premium</span></div>
+        <div class="h-addr in-h"><i><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></i><div>Kasi Nagar,<br><b>T.SUBBULAPURAM – 625 536</b><br>Aundipatti, Theni District, Tamil Nadu</div></div>
+        <div class="h-cta in-h"><button class="btn btn-gold" data-go="shop" data-i18n="shop_now">Shop now →</button><button class="btn btn-line" data-go="borders" data-i18n="view_coll">View collection</button></div>
+      </div>
+      <div class="h-art in-h">
+        <div class="arch"><img src="img/model.jpg" alt="Woman in a plum checked handloom cotton saree with a green and gold border"></div>
+        <div class="medal"><img src="img/closeup.jpg" alt="Close-up of a gold peacock motif on a green saree border"></div>
+        <div class="brushb"><small>Authentic</small>Handloom<br>Cotton Sarees</div>
+        <div class="occ"><svg viewBox="0 0 24 24" fill="none" stroke="#2a1a04" stroke-width="1.8"><path d="M3 4h2.5l2.2 11h10.6L20.5 7H7"/><circle cx="9.5" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/></svg><span>Traditional Sarees…<br>For Every Occasion</span></div>
+      </div>
+    </div>
+    <div class="feats">
+      <div class="wrap">
+        <div class="ft"><svg viewBox="0 0 40 40"><path d="M14 26c-5 0-8-3-8-7 0-3 2-5 5-6 1-4 4-7 9-7s8 3 9 7c3 1 5 3 5 6 0 4-3 7-8 7"/><path d="M20 22v13M15 31l5 4 5-4"/></svg><b data-i18n="f1">100% Pure Cotton</b></div>
+        <div class="ft"><svg viewBox="0 0 40 40"><path d="M6 8h28M6 32h28M10 8v24M30 8v24M10 14h20M10 20h20M10 26h20M16 8v24M24 8v24"/></svg><b data-i18n="f2">Handloom Weaves</b></div>
+        <div class="ft"><svg viewBox="0 0 40 40"><path d="M20 5l12 5v9c0 8-6 13-12 16C14 32 8 27 8 19v-9z"/><path d="M14 20l4 4 8-9"/></svg><b data-i18n="f3">Premium Quality</b></div>
+        <div class="ft"><svg viewBox="0 0 40 40"><path d="M8 33c0-14 8-24 24-27-1 16-10 25-24 27z"/><path d="M8 33l14-14"/></svg><b data-i18n="f4">Comfortable &amp; Stylish</b></div>
+        <div class="ft"><svg viewBox="0 0 40 40"><path d="M3 11h20v15H3zM23 16h8l5 6v4H23"/><circle cx="10" cy="29" r="3"/><circle cx="29" cy="29" r="3"/></svg><b data-i18n="f5">Worldwide Shipping</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="shop">
+    <div class="wrap">
+      <div class="sec-h rv"><span class="script" data-i18n="new_script">Fresh from our looms</span><h2 data-i18n="nav_new">New Arrivals</h2><span class="orn"></span><p data-i18n="new_p">Every saree is 6.20 metres including the running blouse. Woven in pure cotton and checked by hand before it leaves our looms.</p></div>
+      <div class="chips rv" id="chips" role="group" aria-label="Filter by border"></div>
+      <div class="shop-tools rv">
+        <select id="sort" aria-label="Sort sarees"></select>
+        <select id="price" aria-label="Filter by price"></select>
+      </div>
+      <p class="note" id="note" hidden></p>
+      <div class="grid" id="grid"></div>
+      <div class="recent" id="recent" hidden><h3 data-i18n="recent">Recently viewed</h3><div class="rrow" id="rrow"></div></div>
+    </div>
+  </section>
+
+  <section class="blk damask on-green" id="borders">
+    <div class="wrap">
+      <div class="sec-h rv"><span class="script" data-i18n="bor_script">Rich borders, elegant designs</span><h2 data-i18n="bor_h">Shop by Border</h2><span class="orn"></span></div>
+      <div class="medals" id="medals"></div>
+    </div>
+  </section>
+
+  <section class="blk" id="colours">
+    <div class="wrap">
+      <div class="sec-h rv"><span class="script" data-i18n="col_script">Find your shade</span><h2 data-i18n="nav_col">Shop by Colour</h2><span class="orn"></span></div>
+      <div class="swatches" id="swatches"></div>
+    </div>
+  </section>
+
+  <section class="blk promo" style="padding-top:0">
+    <div class="wrap">
+      <div class="frame rv"><img src="img/hero.jpg" alt="S.Bakkiyalaxmi Tex banner: woman in a plum handloom saree beside a stack of coloured cotton sarees"></div>
+      <div class="cta"><button class="btn btn-gold" data-go="shop" data-i18n="promo">Traditional sarees for every occasion →</button></div>
+    </div>
+  </section>
+
+  <section class="blk damask on-green">
+    <div class="wrap">
+      <div class="sec-h rv"><span class="script" data-i18n="why_script">Why families choose us</span><h2 data-i18n="why_h">The SBT Promise</h2><span class="orn"></span></div>
+      <div class="why">
+        <div class="wy rv"><svg viewBox="0 0 40 40"><path d="M6 8h28M6 32h28M10 8v24M30 8v24M10 14h20M10 20h20M10 26h20"/></svg><h3 data-i18n="w1h">Woven by hand</h3><p data-i18n="w1p">Every saree comes off a handloom in our village, not a power loom.</p></div>
+        <div class="wy rv" style="--d:.08s"><svg viewBox="0 0 40 40"><path d="M6 20l14-14 14 14M10 17v16h20V17"/><path d="M17 33v-9h6v9"/></svg><h3 data-i18n="w2h">Direct from the loom</h3><p data-i18n="w2p">No middlemen. You pay the weaver's price, not a showroom markup.</p></div>
+        <div class="wy rv" style="--d:.16s"><svg viewBox="0 0 40 40"><path d="M14 26c-5 0-8-3-8-7 0-3 2-5 5-6 1-4 4-7 9-7s8 3 9 7c3 1 5 3 5 6 0 4-3 7-8 7"/></svg><h3 data-i18n="w3h">Pure cotton</h3><p data-i18n="w3p">Soft, breathable and made for Tamil Nadu summers. Gets softer with every wash.</p></div>
+        <div class="wy rv" style="--d:.24s"><svg viewBox="0 0 40 40"><rect x="7" y="17" width="26" height="17" rx="3"/><path d="M13 17v-5a7 7 0 0 1 14 0v5"/><circle cx="20" cy="25" r="2"/></svg><h3 data-i18n="w4h">Secure payment</h3><p data-i18n="w4p">Pay by UPI, card or net banking. Delivered to your door in 3 to 6 days.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="about">
+    <div class="wrap story">
+      <div class="ph rv">
+        <div class="f"><img src="img/stack.jpg" alt="Six folded handloom cotton sarees in blue, red, green, yellow, grey and pink"></div>
+        <div class="f2"><img src="img/closeup.jpg" alt=""></div>
+      </div>
+      <div class="rv">
+        <span class="script" data-i18n="nav_story">Our story</span>
+        <h2 data-i18n="story_h">From the looms of Kasi Nagar</h2>
+        <p class="t" data-i18n="story_p1">S.Bakkiyalaxmi Tex weaves cotton sarees in T.Subbulapuram, near Aundipatti in Theni district. Each saree is woven by hand, one thread at a time, in the checks, buttas and rich borders that Tamil homes have worn for generations.</p>
+        <p class="t" data-i18n="story_p2">We sell straight from our looms to you, so you get an honest price and a saree made to be worn and loved.</p>
+        <div class="facts"><div><b>6.20 m</b><span data-i18n="fact1">with blouse</span></div><div><b>100%</b><span data-i18n="fact2">pure cotton</span></div><div><b>7</b><span data-i18n="fact3">days easy returns</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk damask on-green" id="contact">
+    <div class="wrap">
+      <div class="sec-h rv"><span class="script" data-i18n="con_script">We'd love to hear from you</span><h2 data-i18n="con_h">Visit or Contact Us</h2><span class="orn"></span></div>
+      <div class="contact">
+        <div class="cinfo rv">
+          <div class="ci"><i><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></i><div><b data-i18n="ci1">Our looms</b><span>Kasi Nagar, T.Subbulapuram – 625 536<br>Aundipatti, Theni District, Tamil Nadu</span></div></div>
+          <div class="ci"><i><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></i><div><b data-i18n="ci2">Call or WhatsApp</b><span id="phone"></span></div></div>
+          <div class="ci"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><div><b data-i18n="ci3">Shop hours</b><span data-i18n="hours">Monday to Saturday, 9:00 am – 8:00 pm</span></div></div>
+          <div><a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=T.Subbulapuram+Aundipatti+Theni+625536" target="_blank" rel="noopener" data-i18n="dir">Get directions ↗</a></div>
+        </div>
+        <form class="fcard rv" id="contactForm" novalidate>
+          <h3 data-i18n="send_h">Send us a message</h3>
+          <div class="row2">
+            <div class="field"><label for="c-name" data-i18n="l_name">Your name</label><input id="c-name" autocomplete="name"><span class="err"></span></div>
+            <div class="field"><label for="c-phone" data-i18n="l_phone">Mobile number</label><input id="c-phone" inputmode="tel" autocomplete="tel"><span class="err"></span></div>
+          </div>
+          <div class="field"><label for="c-msg" data-i18n="l_msg">Message</label><textarea id="c-msg" rows="4"></textarea><span class="err"></span></div>
+          <button class="btn btn-green" type="submit" style="width:100%" data-i18n="send">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="view" id="v-product"><div class="wrap page" id="pdp"></div></div>
+<div class="view" id="v-checkout"><div class="wrap page" id="co"></div></div>
+<div class="view" id="v-done"><div class="wrap page" id="done"></div></div>
+</main>
+
+<footer class="damask">
+  <div class="wrap">
+    <div class="fgrid">
+      <div><img src="img/logo.png" alt="SBT"><p style="margin-top:.8rem;color:var(--on-g-m);max-width:34ch;font-size:.9rem" data-i18n="foot_p">Handloom cotton sarees, woven in Aundipatti and sent to you straight from our looms.</p><p class="ta" style="margin-top:.6rem;color:var(--gold-l)">கைத்தறி பருத்தி சேலைகள்</p></div>
+      <div><h4 data-i18n="f_shop">SHOP</h4><ul><li><a href="#shop" data-go="shop" data-i18n="nav_new">New arrivals</a></li><li><a href="#borders" data-go="borders" data-i18n="bor_h">Shop by border</a></li><li><a href="#colours" data-go="colours" data-i18n="nav_col">Shop by colour</a></li></ul></div>
+      <div><h4 data-i18n="f_help">HELP</h4><ul><li><a href="#contact" data-go="contact" data-i18n="nav_contact">Contact us</a></li><li><a href="#track" data-track data-i18n="nav_track">Track order</a></li><li><a href="#about" data-go="about" data-i18n="nav_story">Our story</a></li><li data-i18n="free_ship">Free shipping above ₹1,500</li></ul></div>
+      <div><h4 data-i18n="f_visit">VISIT</h4><ul><li>Kasi Nagar, T.Subbulapuram</li><li>Aundipatti, Theni – 625 536</li><li>Tamil Nadu, India</li></ul></div>
+    </div>
+    <div class="fbot"><span>© 2026 S.Bakkiyalaxmi Tex</span><span>UPI · Cards · Net banking</span></div>
+  </div>
+</footer>
+
+<!-- drawers & overlays -->
+<div id="cart" aria-hidden="true">
+  <div class="scrim" data-close></div>
+  <div class="pnl" role="dialog" aria-label="Your bag">
+    <div class="pnl-h damask"><h3 data-i18n="bag">Your Bag</h3><button class="ib" data-close aria-label="Close bag"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="cl" id="cl"></div>
+    <div class="cf" id="cf"></div>
+  </div>
+</div>
+<div id="wishD" aria-hidden="true">
+  <div class="scrim" data-close></div>
+  <div class="pnl" role="dialog" aria-label="Wishlist">
+    <div class="pnl-h damask"><h3 data-i18n="wish">Wishlist</h3><button class="ib" data-close aria-label="Close wishlist"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="cl" id="wl"></div>
+  </div>
+</div>
+<div id="search" aria-hidden="true">
+  <div class="scrim" data-close></div>
+  <div class="box" role="dialog" aria-label="Search">
+    <div class="s-in"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" autocomplete="off" aria-label="Search sarees"><button class="ib" data-close aria-label="Close search" style="color:var(--g8)"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="s-res" id="sres"></div>
+  </div>
+</div>
+<div class="modal" id="qvM" aria-hidden="true"><div class="scrim" data-close></div><div class="mbox" role="dialog" aria-label="Quick view"><button class="ib x" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button><div id="qvB"></div></div></div>
+<div class="modal" id="trkM" aria-hidden="true"><div class="scrim" data-close></div><div class="mbox" role="dialog" aria-label="Track order" style="width:min(560px,100%)"><button class="ib x" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button><div class="trk" id="trkB"></div></div></div>
+<div id="pay" hidden><div class="box" role="dialog" aria-label="Payment"><div class="bh damask"><div><b>S.Bakkiyalaxmi Tex</b><small id="payM"></small></div><b class="price" id="payA"></b></div><div class="bb" id="payB"></div></div></div>
+
+<a class="fab fab-wa" id="waFab" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg></a>
+<button class="fab fab-top" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+document.documentElement.classList.add("js");
+/* ================= SHOP SETTINGS (edit these) ================= */
+const WHATSAPP="";               // shop WhatsApp number with country code, e.g. "919876543210"
+const OFFER_END=new Date("2026-11-07T23:59:59+05:30"); // Deepavali offer end
+const COUPONS={DEEPAVALI10:{type:"pct",v:10,until:OFFER_END,min:0,label:"10% off"},FIRST100:{type:"flat",v:100,min:1000,label:"₹100 off on orders above ₹1,000"}};
+const FREE=1500,SHIP=80,GIFT=50;
+
+/* ================= DATA ================= */
+// Real photos from the shop. img = [studio shot, border close-up, body close-up]. Prices are placeholders until confirmed.
+const P=[
+ {id:"sbt21",name:"Violet Temple Border",ta:"ஊதா கோயில் பார்டர் சேலை",weave:"temple",col:"Violet",img:["img/violet.jpg","img/violet-b.jpg","img/violet-c.jpg"],price:1250,mrp:1550,isNew:1,best:1,desc:"Deep violet body with mustard double-line checks and buttas, finished with a bold mustard temple border.",tad:"அடர் ஊதா உடலில் கடுகு மஞ்சள் இரட்டைக் கட்டங்களும் புட்டாக்களும், கம்பீரமான கோயில் பார்டருடன்."},
+ {id:"sbt22",name:"Mustard Peacock Border",ta:"கடுகு மஞ்சள் மயில் பார்டர் சேலை",weave:"peacock",col:"Mustard",img:["img/mustard.jpg","img/mustard-b.jpg","img/mustard-c.jpg"],price:1350,mrp:1650,isNew:1,best:1,desc:"Mustard body with fine pink and lime checks and pink buttas, set off by a rani pink border of woven peacocks.",tad:"கடுகு மஞ்சள் உடலில் மெல்லிய இளஞ்சிவப்புக் கட்டங்கள், ராணி பிங்க் பார்டரில் நெய்த மயில்கள்."},
+ {id:"sbt23",name:"Green Mango Kattam",ta:"பச்சை மாங்காய் கட்டம் சேலை",weave:"mango",col:"Green",img:["img/green.jpg","img/green-b.jpg","img/green-c.jpg"],price:1150,mrp:1400,isNew:1,desc:"Parrot green body with yellow checks and mango buttas, and a large mango motif border in turmeric yellow.",tad:"கிளிப் பச்சை உடலில் மஞ்சள் கட்டங்களும் மாங்காய் புட்டாக்களும், மஞ்சள் நிற பெரிய மாங்காய் பார்டர்."},
+ {id:"sbt24",name:"Lemon Zari Kattam",ta:"எலுமிச்சை ஜரி கட்டம் சேலை",weave:"zari",col:"Lemon",img:["img/lemon.jpg","img/lemon-b.jpg","img/lemon-c.jpg"],price:1450,mrp:1800,isNew:1,desc:"Lemon yellow body in tiny kattam checks with a wine border woven in gold zari mangoes and annam birds. Tasselled pallu.",tad:"எலுமிச்சை மஞ்சள் சிறு கட்டம், தங்க ஜரி மாங்காய் மற்றும் அன்னம் நெய்த ஒயின் நிற பார்டர். குஞ்சம் வைத்த முந்தானை."},
+ {id:"sbt25",name:"Plum Zari Kattam",ta:"பிளம் ஜரி கட்டம் சேலை",weave:"zari",col:"Plum",img:["img/plum.jpg","img/plum-b.jpg","img/model.jpg"],price:1850,mrp:2250,best:1,desc:"Plum body in gold-line checks with diamond buttas, framed by a bottle green border woven with gold peacocks and florals.",tad:"பிளம் நிற உடலில் தங்கக் கோட்டுக் கட்டங்கள், தங்க மயில் மற்றும் பூ வேலைப்பாடுடன் பாட்டில் பச்சை பார்டர்."},
+];
+const WEAVES={temple:{t:"Temple Border",ta:"கோயில் பார்டர்",d:"Gopuram rows",pick:"sbt21"},peacock:{t:"Peacock Border",ta:"மயில் பார்டர்",d:"Mayil motifs",pick:"sbt22"},mango:{t:"Mango Border",ta:"மாங்காய் பார்டர்",d:"Paisley motifs",pick:"sbt23"},zari:{t:"Zari Border",ta:"ஜரி பார்டர்",d:"Gold-thread weave",pick:"sbt24"}};
+const COLTA={Violet:"ஊதா",Mustard:"கடுகு மஞ்சள்",Green:"பச்சை",Lemon:"எலுமிச்சை",Plum:"பிளம்",Blue:"நீலம்",Red:"சிவப்பு",Grey:"சாம்பல்",Pink:"இளஞ்சிவப்பு"};
+const COLOURS=[["Violet","img/violet-c.jpg"],["Mustard","img/mustard-c.jpg"],["Green","img/green-c.jpg"],["Lemon","img/lemon-c.jpg"],["Plum","img/plum-b.jpg"],["Blue","img/sw-blue.jpg"],["Red","img/sw-red.jpg"],["Grey","img/sw-grey.jpg"],["Pink","img/sw-pink.jpg"]];
+
+/* ================= LANGUAGE ================= */
+const T={
+ offer:["Deepavali Offer: extra 10% off with code","தீபாவளி சலுகை: கூடுதல் 10% தள்ளுபடி, கோடு"],
+ ends:["ends in","முடிய"],
+ nav_home:["Home","முகப்பு"],nav_new:["New Arrivals","புதிய வரவுகள்"],nav_cat:["Categories","வகைகள்"],nav_col:["Shop by Colour","நிறம் வாரியாக"],nav_story:["Our Story","எங்கள் கதை"],nav_contact:["Contact","தொடர்பு"],nav_track:["Track Order","ஆர்டர் நிலை"],
+ hero_script:["Traditional Weaves… Timeless Elegance…","பாரம்பரிய நெசவு… என்றும் அழகு…"],hero_sub:["Handloom Cotton Sarees","கைத்தறி பருத்தி சேலைகள்"],
+ tag1:["Pure Cotton","தூய பருத்தி"],tag2:["Traditional","பாரம்பரியம்"],tag3:["Premium","உயர்தரம்"],
+ shop_now:["Shop now →","இப்போதே வாங்க →"],view_coll:["View collection","தொகுப்பைப் பார்க்க"],
+ f1:["100% Pure Cotton","100% தூய பருத்தி"],f2:["Handloom Weaves","கைத்தறி நெசவு"],f3:["Premium Quality","உயர்ந்த தரம்"],f4:["Comfortable & Stylish","வசதியும் அழகும்"],f5:["Worldwide Shipping","உலகெங்கும் டெலிவரி"],
+ new_script:["Fresh from our looms","எங்கள் தறியிலிருந்து புதிதாக"],new_p:["Every saree is 6.20 metres including the running blouse. Woven in pure cotton and checked by hand before it leaves our looms.","ஒவ்வொரு சேலையும் ரவிக்கையுடன் 6.20 மீட்டர். தூய பருத்தியில் நெய்து, கையால் சரிபார்த்து அனுப்புகிறோம்."],
+ recent:["Recently viewed","சமீபத்தில் பார்த்தவை"],
+ bor_script:["Rich borders, elegant designs","அழகிய பார்டர்கள், நேர்த்தியான டிசைன்கள்"],bor_h:["Shop by Border","பார்டர் வாரியாக"],
+ col_script:["Find your shade","உங்கள் நிறத்தைத் தேர்ந்தெடுங்கள்"],
+ promo:["Traditional sarees for every occasion →","எல்லா விசேஷங்களுக்கும் பாரம்பரிய சேலைகள் →"],
+ why_script:["Why families choose us","குடும்பங்கள் எங்களைத் தேர்வு செய்வது ஏன்"],why_h:["The SBT Promise","SBT உறுதிமொழி"],
+ w1h:["Woven by hand","கையால் நெய்தது"],w1p:["Every saree comes off a handloom in our village, not a power loom.","ஒவ்வொரு சேலையும் எங்கள் ஊரின் கைத்தறியில் நெய்தது, விசைத்தறியில் அல்ல."],
+ w2h:["Direct from the loom","தறியிலிருந்து நேரடியாக"],w2p:["No middlemen. You pay the weaver's price, not a showroom markup.","இடைத்தரகர் இல்லை. நெசவாளர் விலையில் நேரடியாக உங்களுக்கு."],
+ w3h:["Pure cotton","தூய பருத்தி"],w3p:["Soft, breathable and made for Tamil Nadu summers. Gets softer with every wash.","மென்மையானது, காற்றோட்டமானது. ஒவ்வொரு துவைப்பிலும் இன்னும் மென்மையாகும்."],
+ w4h:["Secure payment","பாதுகாப்பான கட்டணம்"],w4p:["Pay by UPI, card or net banking. Delivered to your door in 3 to 6 days.","UPI, கார்டு அல்லது நெட் பேங்கிங் மூலம் செலுத்தலாம். 3 முதல் 6 நாட்களில் வீடு தேடி வரும்."],
+ story_h:["From the looms of Kasi Nagar","காசி நகர் தறிகளிலிருந்து"],
+ story_p1:["S.Bakkiyalaxmi Tex weaves cotton sarees in T.Subbulapuram, near Aundipatti in Theni district. Each saree is woven by hand, one thread at a time, in the checks, buttas and rich borders that Tamil homes have worn for generations.","தேனி மாவட்டம், ஆண்டிபட்டி அருகே உள்ள டி.சுப்புலாபுரத்தில் S.பாக்கியலட்சுமி டெக்ஸ் பருத்திச் சேலைகளை நெய்கிறது. தலைமுறை தலைமுறையாக தமிழ் வீடுகள் அணியும் கட்டம், புட்டா, அழகிய பார்டர்களில் ஒவ்வொரு சேலையும் கையால் நெய்யப்படுகிறது."],
+ story_p2:["We sell straight from our looms to you, so you get an honest price and a saree made to be worn and loved.","எங்கள் தறியிலிருந்து நேரடியாக உங்களுக்கு விற்கிறோம். நியாயமான விலை, மனதுக்குப் பிடித்த சேலை."],
+ fact1:["with blouse","ரவிக்கையுடன்"],fact2:["pure cotton","தூய பருத்தி"],fact3:["days easy returns","நாள் எளிய ரிட்டர்ன்"],
+ con_script:["We'd love to hear from you","உங்களிடமிருந்து கேட்க ஆவலாக உள்ளோம்"],con_h:["Visit or Contact Us","எங்களைத் தொடர்பு கொள்ள"],
+ ci1:["Our looms","எங்கள் தறிகள்"],ci2:["Call or WhatsApp","அழைக்க / வாட்ஸ்அப்"],ci3:["Shop hours","கடை நேரம்"],hours:["Monday to Saturday, 9:00 am – 8:00 pm","திங்கள் முதல் சனி, காலை 9 – இரவு 8"],dir:["Get directions ↗","வழி காட்ட ↗"],
+ send_h:["Send us a message","எங்களுக்கு செய்தி அனுப்புங்கள்"],l_name:["Your name","உங்கள் பெயர்"],l_phone:["Mobile number","மொபைல் எண்"],l_msg:["Message","செய்தி"],send:["Send message","அனுப்பு"],
+ foot_p:["Handloom cotton sarees, woven in Aundipatti and sent to you straight from our looms.","ஆண்டிபட்டியில் நெய்த கைத்தறி பருத்திச் சேலைகள், தறியிலிருந்து நேரடியாக உங்களுக்கு."],
+ f_shop:["SHOP","வாங்க"],f_help:["HELP","உதவி"],f_visit:["VISIT","முகவரி"],free_ship:["Free shipping above ₹1,500","₹1,500க்கு மேல் இலவச டெலிவரி"],
+ bag:["Your Bag","உங்கள் பை"],wish:["Wishlist","விருப்பப் பட்டியல்"],
+ add:["Add to bag","பையில் சேர்"],buy:["Buy now →","இப்போதே வாங்கு →"],qv:["Quick view","விரைவுப் பார்வை"],details:["View full details","முழு விவரம் பார்க்க"],
+ all:["All sarees","அனைத்தும்"],sort_f:["Sort: Featured","வரிசை: சிறப்பு"],sort_l:["Price: low to high","விலை: குறைவு முதல்"],sort_h:["Price: high to low","விலை: அதிகம் முதல்"],sort_n:["Newest first","புதியவை முதலில்"],
+ pr_any:["Any price","எந்த விலையும்"],pr_1:["Under ₹1,300","₹1,300க்கு கீழ்"],pr_2:["₹1,300 – ₹1,600","₹1,300 – ₹1,600"],pr_3:["Above ₹1,600","₹1,600க்கு மேல்"],
+ empty_bag:["Your bag is empty","உங்கள் பை காலியாக உள்ளது"],browse:["Browse sarees","சேலைகளைப் பார்க்க"],
+ subtotal:["Subtotal","மொத்தம்"],shipping:["Shipping","டெலிவரி"],total:["Total","செலுத்த வேண்டியது"],free:["Free","இலவசம்"],discount:["Discount","தள்ளுபடி"],giftwrap:["Gift wrap","பரிசுப் பொதி"],
+ checkout:["Checkout securely →","பாதுகாப்பாக செலுத்த →"],
+ search_ph:["Search sarees, colours, borders…","சேலை, நிறம், பார்டர் தேடுங்கள்…"],
+ wa_order:["Order on WhatsApp","வாட்ஸ்அப்பில் ஆர்டர் செய்ய"],
+ pin_l:["Check delivery to your PIN code","உங்கள் பின்கோடுக்கு டெலிவரி சரிபார்க்க"],pin_b:["Check","சரிபார்"],
+ new:["New","புதிது"],best:["Best seller","அதிகம் விற்பவை"],
+};
+let lang="en";try{lang=localStorage.getItem("sbt4-lang")||"en"}catch(e){}
+const t=k=>(T[k]||[k,k])[lang==="ta"?1:0];
+const nm=p=>lang==="ta"?p.ta:p.name;
+const wv=k=>lang==="ta"?WEAVES[k].ta:WEAVES[k].t;
+const cn=c=>lang==="ta"?COLTA[c]:c;
+function applyLang(){
+  document.documentElement.lang=lang==="ta"?"ta":"en";
+  $$("[data-i18n]").forEach(el=>el.textContent=t(el.dataset.i18n));
+  $$("[data-lang]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.lang===lang));
+  $("#q").placeholder=t("search_ph");
+  renderHome();renderCart();renderWish();
+  if(current==="product"&&curP)renderProduct(curP,true);
+  if(current==="checkout")renderCheckout();
+}
+
+/* ================= HELPERS ================= */
+const inr=n=>"₹"+Math.round(n).toLocaleString("en-IN");
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const byId=id=>P.find(p=>p.id===id);
+const off=p=>Math.round((1-p.price/p.mrp)*100);
+const store={get(k,d){try{const v=localStorage.getItem("sbt4-"+k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem("sbt4-"+k,JSON.stringify(v))}catch(e){}}};
+let cart=store.get("cart",[]).filter(i=>byId(i.id)),wish=new Set(store.get("wish",[]).filter(byId)),recent=store.get("recent",[]).filter(byId),orders=store.get("orders",[]);
+let filt={weave:"all",col:null,sort:"featured",price:"any"},coupon=null,gift=false,curP=null,current="home";
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const heart=`<svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>`;
+const eye=`<svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>`;
+const waIcon=$("#waFab").innerHTML;
+function waLink(text){return WHATSAPP?`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`:null;}
+function setupWA(){const u=waLink("Hello S.Bakkiyalaxmi Tex, I'd like to know about your sarees.");$("#waFab").href=u||"#";$("#phone").textContent=WHATSAPP?"+"+WHATSAPP:(lang==="ta"?"எண் விரைவில் சேர்க்கப்படும்":"Number to be added");}
+document.addEventListener("click",e=>{const a=e.target.closest("a[data-wa],#waFab");if(a&&!WHATSAPP){e.preventDefault();toast(lang==="ta"?"வாட்ஸ்அப் எண் விரைவில் சேர்க்கப்படும்":"WhatsApp number will be added soon");}});
+
+/* ================= RENDER: HOME ================= */
+function card(p,i=0){
+  return `<article class="pc rv" style="--d:${(i%3)*.08}s">
+   <div class="im" data-open="${p.id}" tabindex="0" role="link" aria-label="${nm(p)}">
+     <img src="${p.img[0]}" alt="${p.name}, handloom cotton saree" loading="lazy"><img class="b" src="${p.img[1]}" alt="" loading="lazy">
+     ${p.isNew?`<span class="tag">${t("new")}</span>`:p.best?`<span class="tag y">${t("best")}</span>`:""}
+     <button class="heart" data-wish="${p.id}" aria-pressed="${wish.has(p.id)}" aria-label="Save ${p.name}">${heart}</button>
+     <button class="qvb" data-qv="${p.id}">${eye}${t("qv")}</button>
+   </div>
+   <div class="bd">
+     <span class="wv">${wv(p.weave)} · ${cn(p.col)}</span>
+     <span class="nm" data-open="${p.id}">${nm(p)}</span>
+     <div class="pr-row"><span class="price">${inr(p.price)}</span><span class="mrp">${inr(p.mrp)}</span><span class="off">${off(p)}% off</span></div>
+     <div class="add"><button class="btn btn-green" data-add="${p.id}">${t("add")}</button></div>
+   </div>
+  </article>`;
+}
+function renderHome(){
+  $("#chips").innerHTML=[["all",t("all")],...Object.keys(WEAVES).map(k=>[k,wv(k)])].map(([k,l])=>`<button class="chip" data-chip="${k}" aria-pressed="false">${l}</button>`).join("");
+  $("#sort").innerHTML=[["featured","sort_f"],["new","sort_n"],["low","sort_l"],["high","sort_h"]].map(([v,k])=>`<option value="${v}" ${filt.sort===v?"selected":""}>${t(k)}</option>`).join("");
+  $("#price").innerHTML=[["any","pr_any"],["1","pr_1"],["2","pr_2"],["3","pr_3"]].map(([v,k])=>`<option value="${v}" ${filt.price===v?"selected":""}>${t(k)}</option>`).join("");
+  $("#medals").innerHTML=Object.entries(WEAVES).map(([k,w],i)=>{const n=P.filter(p=>p.weave===k).length;return `<button class="md rv" style="--d:${i*.08}s" data-weave="${k}"><span class="c"><span><img src="${byId(w.pick).img[1]}" alt="" loading="lazy"></span></span><b>${wv(k)}</b><small>${w.d} · ${n} saree${n>1?"s":""}</small></button>`}).join("");
+  $("#swatches").innerHTML=COLOURS.map(([c,src],i)=>{const n=P.filter(p=>p.col===c).length;return `<button class="sw rv" style="--d:${i*.05}s" data-col="${c}" aria-pressed="false"><i><img src="${src}" alt="" loading="lazy"></i>${cn(c)}<small>${n?n+(lang==="ta"?" சேலை":" saree"+(n>1?"s":"")):(lang==="ta"?"விரைவில்":"Coming soon")}</small></button>`}).join("");
+  renderGrid();renderRecent();
+}
+function renderGrid(){
+  let list=P.filter(p=>(filt.weave==="all"||p.weave===filt.weave)&&(!filt.col||p.col===filt.col));
+  if(filt.price==="1")list=list.filter(p=>p.price<1300);
+  if(filt.price==="2")list=list.filter(p=>p.price>=1300&&p.price<=1600);
+  if(filt.price==="3")list=list.filter(p=>p.price>1600);
+  if(filt.sort==="low")list.sort((a,b)=>a.price-b.price);
+  if(filt.sort==="high")list.sort((a,b)=>b.price-a.price);
+  if(filt.sort==="new")list.sort((a,b)=>(b.isNew||0)-(a.isNew||0));
+  let html=list.map(card).join("");
+  const filtered=filt.weave!=="all"||filt.col||filt.price!=="any";
+  if(!list.length)html=`<div class="empty"><h3>${filt.col?cn(filt.col)+(lang==="ta"?" விரைவில் வருகிறது":" sarees are on the loom"):(lang==="ta"?"இந்த தேர்வில் சேலை இல்லை":"No sarees match this filter")}</h3><p>${lang==="ta"?"புதிய சேலைகள் ஒவ்வொரு வாரமும் வருகின்றன.":"New sarees arrive every week. Message us and we will tell you when it is ready."}</p><button class="btn btn-ol" data-clear style="margin-top:1.2rem">${t("all")}</button></div>`;
+  else if(!filtered)html+=`<div class="custom damask rv" style="--d:.16s"><h3><em>${lang==="ta"?"உங்கள் நிறம் இல்லையா?":"Can't find your colour?"}</em>${lang==="ta"?"ஆர்டருக்கு நெய்து தருகிறோம்":"We weave to order"}</h3><p>${lang==="ta"?"உங்களுக்கு வேண்டிய நிறமும் பார்டரும் சொல்லுங்கள். எங்கள் தறியில் நெய்து தருகிறோம்.":"Tell us the body colour and border you want. We will weave it for you on our looms."}</p><button class="btn btn-gold" data-go="contact">${lang==="ta"?"நெசவாளரிடம் கேளுங்கள் →":"Ask the weaver →"}</button></div>`;
+  $("#grid").innerHTML=html;
+  $$("[data-chip]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.chip===filt.weave&&!filt.col));
+  $$("[data-col]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.col===filt.col));
+  const n=$("#note");n.hidden=!filtered;
+  if(filtered)n.innerHTML=`${lang==="ta"?list.length+" சேலைகள்":"Showing "+list.length+" saree"+(list.length===1?"":"s")}${filt.col?" · "+cn(filt.col):""}<button data-clear>${lang==="ta"?"நீக்கு":"Clear filters"}</button>`;
+  observe();
+}
+function renderRecent(){
+  const r=recent.filter(byId);$("#recent").hidden=!r.length;
+  $("#rrow").innerHTML=r.map(id=>{const p=byId(id);return `<button class="rc-it" data-open="${p.id}"><img src="${p.img[0]}" alt="" loading="lazy"><b>${nm(p)}</b><small class="price">${inr(p.price)}</small></button>`}).join("");
+}
+
+/* ================= PRODUCT ================= */
+let pq=1;
+function eta(pin){
+  const d=(a,b)=>{const f=x=>new Date(Date.now()+x*864e5).toLocaleDateString(lang==="ta"?"ta-IN":"en-IN",{day:"numeric",month:"short"});return `${f(a)} – ${f(b)}`};
+  if(/^625/.test(pin))return [1,2,d(1,2),lang==="ta"?"தேனி / மதுரை பகுதி":"Theni / Madurai area"];
+  if(/^6[0-4]/.test(pin))return [2,4,d(2,4),lang==="ta"?"தமிழ்நாடு":"Tamil Nadu"];
+  if(/^[1-8]/.test(pin))return [3,6,d(3,6),lang==="ta"?"இந்தியா முழுவதும்":"rest of India"];
+  return null;
+}
+function renderProduct(id,keep){
+  const p=byId(id);curP=id;if(!keep)pq=1;
+  recent=[id,...recent.filter(x=>x!==id)].slice(0,6);store.set("recent",recent);
+  const labels=["Full saree","Border close-up",p.id==="sbt25"?"Worn":"Body close-up"];
+  const wa=waLink(`Hello S.Bakkiyalaxmi Tex, I want to order: ${p.name} (${inr(p.price)}). Code ${p.id.toUpperCase()}.`);
+  $("#pdp").innerHTML=`
+  <div class="crumbs"><button data-go="top">${t("nav_home")}</button><span>›</span><button data-weave="${p.weave}">${wv(p.weave)}</button><span>›</span><span>${nm(p)}</span></div>
+  <div class="pdp">
+    <div class="gal">
+      <div class="thumbs">${p.img.map((s,i)=>`<button data-thumb="${s}" aria-current="${i===0}" aria-label="${labels[i]}"><img src="${s}" alt=""></button>`).join("")}</div>
+      <div class="main-im" id="mainIm"><img src="${p.img[0]}" alt="${p.name}, handloom cotton saree"></div>
+    </div>
+    <div class="info">
+      <span class="wv">${wv(p.weave)} · ${cn(p.col)} · ${p.id.toUpperCase()}</span>
+      <h1>${nm(p)}</h1>
+      <p class="desc">${lang==="ta"?p.tad:p.desc}</p>
+      <div class="pbig"><span class="price">${inr(p.price)}</span><span class="mrp">${inr(p.mrp)}</span><span class="off">${off(p)}% off</span></div>
+      <div class="tax">${lang==="ta"?"அனைத்து வரிகளும் உட்பட":"Inclusive of all taxes"} · ${p.price>=FREE?t("free")+" "+t("shipping").toLowerCase():t("free_ship")}</div>
+      <div style="margin-top:1.4rem;display:flex;align-items:center;gap:1rem"><span style="font-size:.85rem;color:var(--muted)">${lang==="ta"?"எண்ணிக்கை":"Quantity"}</span>
+        <div class="qty"><button data-pq="-1" aria-label="Decrease">−</button><output id="pqo">${pq}</output><button data-pq="1" aria-label="Increase">+</button></div></div>
+      <div class="buy"><button class="btn btn-ol" data-add="${p.id}" data-useq>${t("add")}</button><button class="btn btn-gold" data-buy="${p.id}">${t("buy")}</button></div>
+      <a class="btn btn-wa" data-wa href="${wa||"#"}" target="_blank" rel="noopener">${waIcon}${t("wa_order")}</a>
+      <div class="pin"><label for="pinIn"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>${t("pin_l")}</label>
+        <form id="pinForm"><input id="pinIn" inputmode="numeric" maxlength="6" placeholder="625536" autocomplete="postal-code"><button class="btn btn-green" type="submit">${t("pin_b")}</button></form><div class="res" id="pinRes"></div></div>
+      <div class="perks"><div><b>${lang==="ta"?"பாதுகாப்பான கட்டணம்":"Secure pay"}</b>UPI · Cards</div><div><b>${lang==="ta"?"7 நாள் ரிட்டர்ன்":"7-day returns"}</b>${lang==="ta"?"பயன்படுத்தாதவை":"Unused sarees"}</div><div><b>${lang==="ta"?"கைத்தறி":"Handwoven"}</b>${lang==="ta"?"சிறு மாறுபாடுகள்":"Small variations"}</div></div>
+      <div class="acc">
+        <details open><summary>${lang==="ta"?"சேலை விவரம்":"Saree details"}</summary><table>
+          <tr><td>${lang==="ta"?"துணி":"Fabric"}</td><td>100% cotton, handloom</td></tr><tr><td>${lang==="ta"?"நீளம்":"Length"}</td><td>6.20 m ${lang==="ta"?"ரவிக்கையுடன்":"including blouse"}</td></tr><tr><td>${lang==="ta"?"ரவிக்கை":"Blouse"}</td><td>${lang==="ta"?"ரன்னிங் ரவிக்கை, தைக்காதது":"Running blouse, unstitched"}</td></tr><tr><td>${lang==="ta"?"நிறம்":"Colour"}</td><td>${cn(p.col)}</td></tr><tr><td>${lang==="ta"?"பார்டர்":"Border"}</td><td>${wv(p.weave)}</td></tr><tr><td>${lang==="ta"?"நெய்த இடம்":"Woven at"}</td><td>T.Subbulapuram, Aundipatti</td></tr></table></details>
+        <details><summary>${lang==="ta"?"பராமரிப்பு":"Wash &amp; care"}</summary><p>${lang==="ta"?"முதல் முறை உப்பு நீரில் ஊற வைத்து துவைக்கவும். தனியாக குளிர்ந்த நீரில் துவைத்து நிழலில் உலர்த்தவும்.":"Soak in salt water before the first wash to set the colour. Wash separately in cold water and dry in shade. Iron the border from the reverse side."}</p></details>
+        <details><summary>${lang==="ta"?"டெலிவரி & ரிட்டர்ன்":"Shipping &amp; returns"}</summary><p>${lang==="ta"?"1–2 நாட்களில் அனுப்பப்படும். தமிழ்நாட்டில் 2–4 நாள், மற்ற மாநிலங்களில் 3–6 நாள். பயன்படுத்தாத சேலைகளை 7 நாட்களுக்குள் திருப்பி அனுப்பலாம்.":"Ships in 1 to 2 days. Tamil Nadu in 2 to 4 days, rest of India in 3 to 6 days. Return unused sarees within 7 days of delivery."}</p></details>
+      </div>
+    </div>
+  </div>
+  <div class="sec-h more-h"><span class="script">${lang==="ta"?"இவையும் பிடிக்கலாம்":"You may also love"}</span><h2>${lang==="ta"?"எங்கள் தறியிலிருந்து மேலும்":"More from our looms"}</h2><span class="orn"></span></div>
+  <div class="grid">${P.filter(x=>x.id!==p.id).slice(0,3).map(card).join("")}</div>`;
+  observe();
+}
+
+/* ================= QUICK VIEW / SEARCH / TRACK ================= */
+function quickView(id){
+  const p=byId(id);
+  $("#qvB").innerHTML=`<div class="qv"><div class="im"><img src="${p.img[0]}" alt="${p.name}"></div><div class="bd">
+   <span class="wv" style="font-size:.72rem;font-weight:600;letter-spacing:.12em;color:var(--gold-d);text-transform:uppercase">${wv(p.weave)} · ${cn(p.col)}</span>
+   <h3>${nm(p)}</h3><div class="pr-row" style="font-size:1.25rem"><span class="price">${inr(p.price)}</span><span class="mrp">${inr(p.mrp)}</span><span class="off">${off(p)}% off</span></div>
+   <p>${lang==="ta"?p.tad:p.desc}</p><p>6.20 m · 100% cotton · handloom</p>
+   <div class="btns"><button class="btn btn-gold" data-add="${p.id}" data-closeafter>${t("add")}</button><button class="btn btn-ol" data-open="${p.id}">${t("details")}</button></div></div></div>`;
+  openPanel("#qvM");
+}
+function renderSearch(){
+  const q=$("#q").value.trim().toLowerCase();
+  if(!q){$("#sres").innerHTML=`<div class="s-hint">${lang==="ta"?"பிரபலமான தேடல்கள்":"Popular searches"}<div class="chips">${["Peacock","Temple","Green","Zari","Violet"].map(s=>`<button class="chip" data-sq="${s}">${s}</button>`).join("")}</div></div>`;return;}
+  const r=P.filter(p=>[p.name,p.ta,p.col,COLTA[p.col],WEAVES[p.weave].t,WEAVES[p.weave].ta,p.desc].join(" ").toLowerCase().includes(q));
+  $("#sres").innerHTML=r.length?r.map(p=>`<button class="s-it" data-open="${p.id}"><img src="${p.img[0]}" alt=""><span><b>${nm(p)}</b><small>${wv(p.weave)} · ${cn(p.col)}</small></span><span class="price">${inr(p.price)}</span></button>`).join(""):`<div class="s-hint">${lang==="ta"?"எதுவும் கிடைக்கவில்லை. வேறு வார்த்தையில் தேடுங்கள்.":"No sarees found for “"+$("#q").value+"”. Try a colour or border, like green or peacock."}</div>`;
+}
+function stages(o){
+  const day=864e5,s=o.ts;const fd=x=>new Date(x).toLocaleDateString(lang==="ta"?"ta-IN":"en-IN",{weekday:"short",day:"numeric",month:"short"});
+  return [[lang==="ta"?"ஆர்டர் பெறப்பட்டது":"Order placed",s],[lang==="ta"?"தறியில் பேக் செய்யப்பட்டது":"Packed at our looms",s+day],[lang==="ta"?"அனுப்பப்பட்டது":"Shipped",s+2*day],[lang==="ta"?"டெலிவரிக்கு வெளியே":"Out for delivery",s+(o.days-1)*day],[lang==="ta"?"டெலிவரி ஆனது":"Delivered",s+o.days*day]].map(([l,ts])=>({l,ts,d:fd(ts),done:Date.now()>=ts}));
+}
+function renderTrack(id){
+  const o=id&&orders.find(x=>x.id===id.toUpperCase().trim());
+  let h=`<h3>${t("nav_track")}</h3><form id="trkF"><input id="trkI" placeholder="SBT123456" value="${o?o.id:id||""}" aria-label="Order ID"><button class="btn btn-green" type="submit">${t("pin_b")}</button></form>`;
+  if(id&&!o)h+=`<p style="color:var(--err)">${lang==="ta"?"இந்த ஆர்டர் எண் கிடைக்கவில்லை.":"We couldn't find that order ID on this device. Check the ID in your confirmation."}</p>`;
+  if(o){const st=stages(o);const nowI=st.filter(s=>s.done).length-1;
+    h+=`<div class="orow" style="cursor:default"><span><b>${o.id}</b><small>${o.items.map(i=>byId(i.id)?.name+" × "+i.q).join(", ")}</small></span><span class="price">${inr(o.total)}</span></div>
+    <ol class="tl">${st.map((s,i)=>`<li class="${s.done?"done":""} ${i===nowI?"now":""}"><i></i><div><b>${s.l}</b><small>${s.d}${i===nowI?(lang==="ta"?" · இப்போது":" · current"):""}</small></div></li>`).join("")}</ol>
+    <p style="font-size:.78rem;color:var(--muted);margin-top:1rem">${lang==="ta"?"முன்னோட்டம்: நேரடி கூரியர் விவரம் தளம் தொடங்கியதும் இணைக்கப்படும்.":"Preview: live courier tracking connects when the site goes live."}</p>`;}
+  else if(orders.length)h+=`<p style="font-size:.86rem;color:var(--muted);margin-bottom:.6rem">${lang==="ta"?"உங்கள் ஆர்டர்கள்":"Your orders on this device"}</p><div class="olist">${orders.slice().reverse().map(o=>`<button class="orow" data-trk="${o.id}"><span><b>${o.id}</b><small>${new Date(o.ts).toLocaleDateString("en-IN")} · ${o.items.length} item(s)</small></span><span class="price">${inr(o.total)}</span></button>`).join("")}</div>`;
+  else h+=`<p style="color:var(--muted)">${lang==="ta"?"இன்னும் ஆர்டர் இல்லை.":"No orders yet. Your orders will show here after checkout."}</p>`;
+  $("#trkB").innerHTML=h;
+}
+
+/* ================= CART / WISHLIST ================= */
+const sub=()=>cart.reduce((s,i)=>s+byId(i.id).price*i.q,0);
+function totals(){
+  const s=sub();let d=0;
+  if(coupon){const c=COUPONS[coupon];if(c&&(!c.until||Date.now()<c.until)&&s>=c.min)d=c.type==="pct"?Math.round(s*c.v/100):c.v;}
+  const sh=!cart.length||s>=FREE?0:SHIP,g=gift&&cart.length?GIFT:0;
+  return {s,d,sh,g,total:Math.max(0,s-d+sh+g)};
+}
+function saveCart(){store.set("cart",cart);renderCart();}
+function flyFrom(el){
+  if(reduce||!el)return;const img=el.closest(".pc,.pdp,.qv")?.querySelector(".im img, .main-im img");if(!img)return;
+  const r=img.getBoundingClientRect(),tg=$("#cartBtn").getBoundingClientRect();
+  const f=img.cloneNode();f.className="fly";Object.assign(f.style,{left:r.left+"px",top:r.top+"px",width:r.width+"px",height:r.height+"px"});document.body.appendChild(f);
+  requestAnimationFrame(()=>{f.style.transform=`translate(${tg.left+tg.width/2-r.left-r.width/2}px,${tg.top+tg.height/2-r.top-r.height/2}px) scale(${36/r.width})`;f.style.opacity=".4";});
+  setTimeout(()=>f.remove(),850);
+}
+function add(id,q=1,src){const it=cart.find(i=>i.id===id);it?it.q=Math.min(10,it.q+q):cart.push({id,q});flyFrom(src);setTimeout(()=>{saveCart();const b=$("#cartCount");b.classList.remove("bump");void b.offsetWidth;b.classList.add("bump");},reduce?0:650);toast(`${nm(byId(id))} ${lang==="ta"?"பையில் சேர்க்கப்பட்டது":"added to your bag"}`);}
+function renderCart(){
+  const n=cart.reduce((s,i)=>s+i.q,0);$("#cartCount").hidden=!n;$("#cartCount").textContent=n;
+  $("#wishCount").hidden=!wish.size;$("#wishCount").textContent=wish.size;
+  if(!cart.length){$("#cl").innerHTML=`<div class="empty-c"><h4>${t("empty_bag")}</h4><p>${lang==="ta"?"பிடித்த சேலையைத் தேர்ந்தெடுங்கள்.":"Pick a saree you love and it will wait here."}</p><button class="btn btn-green" data-go="shop">${t("browse")}</button></div>`;$("#cf").innerHTML="";return;}
+  $("#cl").innerHTML=cart.map(i=>{const p=byId(i.id);return `<div class="cli"><img src="${p.img[0]}" alt=""><div><div class="n">${nm(p)}</div><div style="font-size:.78rem;color:var(--muted)">${cn(p.col)} · 6.20 m</div><div style="margin-top:.5rem;display:flex;align-items:center"><div class="qty"><button data-cq="${p.id}" data-d="-1" aria-label="Decrease">−</button><output>${i.q}</output><button data-cq="${p.id}" data-d="1" aria-label="Increase">+</button></div><button class="rm" data-rm="${p.id}">${lang==="ta"?"நீக்கு":"Remove"}</button></div></div><span class="price">${inr(p.price*i.q)}</span></div>`}).join("");
+  const T2=totals(),left=FREE-T2.s;
+  $("#cf").innerHTML=`<div class="meter">${left>0?(lang==="ta"?`இலவச டெலிவரிக்கு இன்னும் ${inr(left)}`:`Add ${inr(left)} more for free shipping`):(lang==="ta"?"இலவச டெலிவரி கிடைத்தது!":"You get free shipping")}<i><b style="width:${Math.min(100,T2.s/FREE*100)}%"></b></i></div>
+  <div class="line"><span>${t("subtotal")}</span><span>${inr(T2.s)}</span></div><div class="line"><span>${t("shipping")}</span><span>${T2.sh?inr(T2.sh):t("free")}</span></div>
+  <div style="font-size:.78rem;color:var(--gold-d)">${lang==="ta"?"கூப்பன் DEEPAVALI10 – செக்அவுட்டில் பயன்படுத்துங்கள்":"Use code DEEPAVALI10 at checkout for 10% off"}</div>
+  <button class="btn btn-gold" data-checkout style="width:100%;margin-top:.3rem">${t("checkout")}</button>`;
+}
+function renderWish(){
+  const w=[...wish].filter(byId);
+  $("#wl").innerHTML=w.length?w.map(id=>{const p=byId(id);return `<div class="cli"><img src="${p.img[0]}" alt="" data-open="${p.id}" style="cursor:pointer"><div><div class="n">${nm(p)}</div><div class="price" style="margin-top:.2rem">${inr(p.price)}</div><div style="margin-top:.5rem;display:flex;gap:.8rem"><button class="wmove" data-move="${p.id}">${lang==="ta"?"பையில் சேர்":"Move to bag"}</button><button class="rm" style="margin:0" data-wish="${p.id}">${lang==="ta"?"நீக்கு":"Remove"}</button></div></div><span></span></div>`}).join(""):`<div class="empty-c"><h4>${lang==="ta"?"பட்டியல் காலியாக உள்ளது":"Your wishlist is empty"}</h4><p>${lang==="ta"?"சேலையில் உள்ள இதயத்தைத் தொட்டு சேமிக்கவும்.":"Tap the heart on any saree to save it here."}</p><button class="btn btn-green" data-go="shop">${t("browse")}</button></div>`;
+}
+
+/* ================= CHECKOUT ================= */
+function sumHTML(){
+  const T2=totals();
+  return `<h3>${lang==="ta"?"ஆர்டர் சுருக்கம்":"Order summary"}</h3>
+   ${cart.map(i=>{const p=byId(i.id);return `<div class="si"><img src="${p.img[0]}" alt=""><div>${nm(p)}<div style="font-size:.76rem;color:var(--muted)">Qty ${i.q}</div></div><span class="price">${inr(p.price*i.q)}</span></div>`}).join("")}
+   <hr style="border:0;border-top:1px solid var(--line);width:100%;margin:.2rem 0">
+   <label for="cpIn" style="font-size:.82rem;font-weight:600;color:var(--g8)">${lang==="ta"?"கூப்பன் கோடு":"Coupon code"}</label>
+   <div class="coupon"><input id="cpIn" value="${coupon||""}" placeholder="DEEPAVALI10" aria-label="Coupon code"><button class="btn btn-ol" type="button" data-coupon>${coupon?(lang==="ta"?"நீக்கு":"Remove"):(lang==="ta"?"பயன்படுத்து":"Apply")}</button></div>
+   <div class="codes">${Object.keys(COUPONS).map(k=>`<button type="button" data-usecode="${k}">${k}</button>`).join("")}</div>
+   <div class="cmsg" id="cmsg"></div>
+   <div class="line"><span>${t("subtotal")}</span><span>${inr(T2.s)}</span></div>
+   ${T2.d?`<div class="line disc"><span>${t("discount")} (${coupon})</span><span>− ${inr(T2.d)}</span></div>`:""}
+   ${T2.g?`<div class="line"><span>${t("giftwrap")}</span><span>${inr(T2.g)}</span></div>`:""}
+   <div class="line"><span>${t("shipping")}</span><span>${T2.sh?inr(T2.sh):t("free")}</span></div>
+   <div class="line tot"><span>${t("total")}</span><span>${inr(T2.total)}</span></div>`;
+}
+function renderCheckout(){
+  const T2=totals(),L=lang==="ta";
+  $("#co").innerHTML=`<div class="crumbs"><button data-go="top">${t("nav_home")}</button><span>›</span><span>Checkout</span></div>
+  <div class="co">
+    <form id="coForm" novalidate>
+      <div class="steps"><span class="on">1 ${L?"முகவரி":"Address"}</span><span class="on">2 ${L?"கட்டணம்":"Payment"}</span><span>3 ${L?"உறுதி":"Confirmed"}</span></div>
+      <h2>${L?"டெலிவரி முகவரி":"Delivery address"}</h2>
+      <div class="row2"><div class="field"><label for="f-name">${L?"முழு பெயர்":"Full name"}</label><input id="f-name" autocomplete="name"><span class="err"></span></div><div class="field"><label for="f-phone">${t("l_phone")}</label><input id="f-phone" inputmode="numeric" maxlength="10" autocomplete="tel-national" placeholder="10-digit number"><span class="err"></span></div></div>
+      <div class="field"><label for="f-email">${L?"ரசீதுக்கு மின்னஞ்சல் (விருப்பம்)":"Email for receipt (optional)"}</label><input id="f-email" type="email" autocomplete="email"><span class="err"></span></div>
+      <div class="field"><label for="f-addr">${L?"வீட்டு எண், தெரு, பகுதி":"House no., street, area"}</label><input id="f-addr" autocomplete="street-address"><span class="err"></span></div>
+      <div class="row2"><div class="field"><label for="f-city">${L?"ஊர் / நகரம்":"Town / city"}</label><input id="f-city" autocomplete="address-level2"><span class="err"></span></div><div class="field"><label for="f-pin">${L?"பின்கோடு":"PIN code"}</label><input id="f-pin" inputmode="numeric" maxlength="6" autocomplete="postal-code"><span class="err"></span></div></div>
+      <div class="field"><label for="f-state">${L?"மாநிலம்":"State"}</label><select id="f-state">${["Tamil Nadu","Kerala","Karnataka","Andhra Pradesh","Telangana","Puducherry","Maharashtra","Delhi","Other state"].map(x=>`<option>${x}</option>`).join("")}</select></div>
+      <label class="gift"><input type="checkbox" id="giftCb" ${gift?"checked":""}><div><b>${L?"பரிசுப் பொதி வேண்டும் (+₹50)":"Gift wrap this order (+₹50)"}</b><span>${L?"தங்க ரிப்பனுடன் அழகிய பெட்டியில், வாழ்த்து அட்டையுடன்.":"Packed in a gold-ribbon box with a greeting card. Perfect for functions."}</span></div></label>
+      <h2 style="margin-top:.6rem">${L?"கட்டணம்":"Payment"}</h2>
+      <div class="demo">${L?"முன்னோட்டம்: பணம் எடுக்கப்படாது. தளம் தொடங்கியதும் Razorpay மூலம் UPI, கார்டு, நெட் பேங்கிங் வேலை செய்யும்.":"Preview mode: no money is charged. When the site goes live, this step opens Razorpay so customers pay by UPI, card or net banking."}</div>
+      <div class="pms">
+        <label class="pm"><input type="radio" name="pm" value="UPI" checked><div><b>UPI</b><span>${L?"எந்த UPI ஆப்பும்":"Any UPI app or UPI ID"}</span></div></label>
+        <label class="pm"><input type="radio" name="pm" value="Card"><div><b>${L?"டெபிட் / கிரெடிட் கார்டு":"Debit or credit card"}</b><span>Visa, Mastercard, RuPay</span></div></label>
+        <label class="pm"><input type="radio" name="pm" value="Net banking"><div><b>${L?"நெட் பேங்கிங்":"Net banking"}</b><span>${L?"அனைத்து வங்கிகளும்":"All major Indian banks"}</span></div></label>
+      </div>
+      <button class="btn btn-gold" type="submit" id="payBtn" style="width:100%;padding-block:1.15em">${L?"பாதுகாப்பாக செலுத்து":"Pay securely"} ${inr(T2.total)} →</button>
+    </form>
+    <aside class="sum" id="sum">${sumHTML()}</aside>
+  </div>`;
+}
+function refreshSum(msg,ok){$("#sum").innerHTML=sumHTML();$("#payBtn").textContent=`${lang==="ta"?"பாதுகாப்பாக செலுத்து":"Pay securely"} ${inr(totals().total)} →`;if(msg){$("#cmsg").textContent=msg;$("#cmsg").className="cmsg "+(ok?"ok":"bad");}}
+function applyCoupon(code){
+  code=(code||"").toUpperCase().trim();const c=COUPONS[code];
+  if(!c)return refreshSum(lang==="ta"?"இந்த கூப்பன் செல்லாது":"That code isn't valid. Try DEEPAVALI10 or FIRST100.",false);
+  if(c.until&&Date.now()>c.until)return refreshSum(lang==="ta"?"இந்த சலுகை முடிந்துவிட்டது":"This offer has ended.",false);
+  if(sub()<c.min)return refreshSum(lang==="ta"?`${inr(c.min)}க்கு மேல் ஆர்டருக்கு மட்டும்`:`This code needs an order above ${inr(c.min)}.`,false);
+  coupon=code;refreshSum(`${code} ${lang==="ta"?"பயன்படுத்தப்பட்டது":"applied"}: ${c.label}`,true);
+}
+function validate(f,rules){let ok=true;for(const[id,tst,m]of rules){const el=f.querySelector("#"+id),e=el.parentElement.querySelector(".err"),bad=!tst(el.value.trim());if(e)e.textContent=bad?m:"";if(bad&&ok)el.focus();ok=ok&&!bad;}return ok;}
+function pay(o){
+  $("#payA").textContent=inr(o.total);$("#payM").textContent=o.method+" · preview";
+  $("#payB").innerHTML=`<div class="spin"></div><p>${lang==="ta"?"உறுதிப்படுத்தலுக்காக காத்திருக்கிறது…":"Waiting for "+o.method+" confirmation…"}</p><p style="font-size:.76rem;color:var(--muted)">Preview payment. No money is charged.</p>`;
+  $("#pay").hidden=false;
+  setTimeout(()=>{$("#payB").innerHTML=`<div class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></div><p><b>${lang==="ta"?"கட்டணம் வெற்றி":"Payment successful"}</b></p>`;setTimeout(()=>{$("#pay").hidden=true;finish(o)},1100)},1900);
+}
+function finish(o){
+  orders.push(o);store.set("orders",orders);
+  const st=stages(o),L=lang==="ta";
+  $("#done").innerHTML=`<div class="done"><div class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></div>
+   <h1>${L?"நன்றி":"Thank you"}, ${o.name.split(" ")[0]}!</h1><div class="oid">ORDER ${o.id}</div>
+   <p style="color:var(--muted);margin-top:.8rem">${L?"உங்கள் சேலைகள் எங்கள் தறியில் பேக் செய்யப்படுகின்றன. எதிர்பார்க்கும் டெலிவரி:":"Your sarees are being folded and packed at our looms. Expected delivery by"} ${st[4].d}.</p>
+   <div class="rc">${o.items.map(i=>`<div class="line"><span>${nm(byId(i.id))} × ${i.q}</span><span>${inr(byId(i.id).price*i.q)}</span></div>`).join("")}
+   ${o.disc?`<div class="line disc"><span>${t("discount")} (${o.coupon})</span><span>− ${inr(o.disc)}</span></div>`:""}${o.gift?`<div class="line"><span>${t("giftwrap")}</span><span>${inr(GIFT)}</span></div>`:""}
+   <div class="line tot" style="border-top:1px solid var(--line);padding-top:.5rem"><span>${L?"செலுத்தியது":"Paid by"} ${o.method}</span><span>${inr(o.total)}</span></div>
+   <div style="font-size:.85rem;color:var(--muted)">${L?"டெலிவரி முகவரி":"Delivering to"} ${o.addr}, ${o.city} – ${o.pin}</div></div>
+   <div style="display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap"><button class="btn btn-gold" data-trk="${o.id}">${t("nav_track")}</button><button class="btn btn-green" data-go="shop">${L?"மேலும் வாங்க":"Continue shopping"}</button></div></div>`;
+  cart=[];coupon=null;gift=false;saveCart();show("done");
+}
+
+/* ================= NAV ================= */
+function show(v){closeAll();$$(".view").forEach(el=>el.classList.toggle("on",el.id==="v-"+v));current=v;window.scrollTo({top:0,behavior:"instant"});observe();}
+function go(target){
+  closeAll();if(current!=="home")show("home");
+  const el=target==="top"?null:document.getElementById(target);
+  requestAnimationFrame(()=>window.scrollTo({top:el?el.getBoundingClientRect().top+scrollY-80:0,behavior:"smooth"}));
+}
+function openProduct(id){if(!byId(id))return;renderProduct(id);show("product");}
+function openCheckout(){if(!cart.length){go("shop");return;}renderCheckout();show("checkout");}
+const PANELS=["#cart","#menu","#wishD","#search","#qvM","#trkM"];
+function closeAll(){PANELS.forEach(s=>{$(s).classList.remove("open");$(s).setAttribute("aria-hidden","true")});document.documentElement.style.overflow="";}
+function openPanel(id){PANELS.forEach(s=>s!==id&&$(s).classList.remove("open"));$(id).classList.add("open");$(id).setAttribute("aria-hidden","false");document.documentElement.style.overflow="hidden";}
+let tt;function toast(m){const el=$("#toast");el.textContent=m;el.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>el.classList.remove("show"),2400);}
+function copyText(txt){const done=()=>toast(`${txt} ${lang==="ta"?"நகலெடுக்கப்பட்டது":"copied"}`);try{navigator.clipboard.writeText(txt).then(done,()=>toast(`Code: ${txt}`));}catch(e){toast(`Code: ${txt}`);}}
+
+document.addEventListener("click",e=>{
+  const el=e.target.closest("[data-go],[data-wish],[data-add],[data-buy],[data-open],[data-weave],[data-chip],[data-col],[data-clear],[data-thumb],[data-pq],[data-cq],[data-rm],[data-checkout],[data-close],#mainIm,[data-qv],[data-lang],[data-copy],[data-track],[data-trk],[data-sq],[data-move],[data-coupon],[data-usecode]");
+  if(!el)return;const d=el.dataset;
+  if(d.go){e.preventDefault();go(d.go);return;}
+  if(d.lang){lang=d.lang;try{localStorage.setItem("sbt4-lang",lang)}catch(_){}applyLang();setupWA();return;}
+  if(d.copy){copyText(d.copy);return;}
+  if("track" in d){e.preventDefault();renderTrack();openPanel("#trkM");return;}
+  if(d.trk){renderTrack(d.trk);openPanel("#trkM");return;}
+  if(d.qv){e.stopPropagation();quickView(d.qv);return;}
+  if(d.sq){$("#q").value=d.sq;renderSearch();return;}
+  if(d.wish){e.stopPropagation();wish.has(d.wish)?wish.delete(d.wish):wish.add(d.wish);store.set("wish",[...wish]);$$(`.heart[data-wish="${d.wish}"]`).forEach(b=>b.setAttribute("aria-pressed",wish.has(d.wish)));renderCart();renderWish();toast(wish.has(d.wish)?(lang==="ta"?"விருப்பப் பட்டியலில் சேர்க்கப்பட்டது":"Saved to your wishlist"):(lang==="ta"?"நீக்கப்பட்டது":"Removed from your wishlist"));return;}
+  if(d.move){wish.delete(d.move);store.set("wish",[...wish]);add(d.move,1);renderWish();return;}
+  if(d.add){add(d.add,"useq" in d?pq:1,el);if("closeafter" in d)setTimeout(closeAll,300);return;}
+  if(d.buy){const it=cart.find(i=>i.id===d.buy);it?it.q=Math.min(10,it.q+pq):cart.push({id:d.buy,q:pq});saveCart();openCheckout();return;}
+  if(d.open){openProduct(d.open);return;}
+  if(d.weave){filt={...filt,weave:d.weave,col:null};renderGrid();go("shop");return;}
+  if(d.chip){filt={...filt,weave:d.chip,col:null};renderGrid();return;}
+  if(d.col){filt={...filt,weave:"all",col:filt.col===d.col?null:d.col};renderGrid();go("shop");return;}
+  if("clear" in d){filt={weave:"all",col:null,sort:filt.sort,price:"any"};$("#price").value="any";renderGrid();return;}
+  if(d.thumb){const m=$("#mainIm img");$("#mainIm").classList.remove("zoom");m.src=d.thumb;$$("[data-thumb]").forEach(b=>b.setAttribute("aria-current",b===el));return;}
+  if(el.id==="mainIm"){el.classList.toggle("zoom");return;}
+  if(d.pq){pq=Math.max(1,Math.min(10,pq+ +d.pq));$("#pqo").textContent=pq;return;}
+  if(d.cq){const it=cart.find(i=>i.id===d.cq);it.q=Math.max(1,Math.min(10,it.q+ +d.d));saveCart();return;}
+  if(d.rm){cart=cart.filter(i=>i.id!==d.rm);saveCart();return;}
+  if("checkout" in d){openCheckout();return;}
+  if("coupon" in d){if(coupon){coupon=null;refreshSum(lang==="ta"?"கூப்பன் நீக்கப்பட்டது":"Coupon removed",true);}else applyCoupon($("#cpIn").value);return;}
+  if(d.usecode){$("#cpIn").value=d.usecode;applyCoupon(d.usecode);return;}
+  if("close" in d){closeAll();return;}
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeAll();if(e.key==="Enter"&&e.target.matches("[data-open][tabindex]"))openProduct(e.target.dataset.open);if(e.key==="/"&&!e.target.closest("input,textarea")){e.preventDefault();$("#searchBtn").click();}});
+document.addEventListener("change",e=>{
+  if(e.target.id==="sort"){filt.sort=e.target.value;renderGrid();}
+  if(e.target.id==="price"){filt.price=e.target.value;renderGrid();}
+  if(e.target.id==="giftCb"){gift=e.target.checked;refreshSum();}
+});
+document.addEventListener("input",e=>{if(e.target.id==="q")renderSearch();});
+document.addEventListener("mousemove",e=>{const m=e.target.closest("#mainIm.zoom");if(m){const r=m.getBoundingClientRect();m.querySelector("img").style.transformOrigin=`${(e.clientX-r.left)/r.width*100}% ${(e.clientY-r.top)/r.height*100}%`;}});
+$("#cartBtn").onclick=()=>{renderCart();openPanel("#cart")};
+$("#wishBtn").onclick=()=>{renderWish();openPanel("#wishD")};
+$("#menuBtn").onclick=()=>openPanel("#menu");
+$("#trackBtn").onclick=()=>{renderTrack();openPanel("#trkM")};
+$("#searchBtn").onclick=()=>{openPanel("#search");renderSearch();setTimeout(()=>$("#q").focus(),60)};
+$("#toTop").onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
+document.addEventListener("submit",e=>{
+  e.preventDefault();const f=e.target,L=lang==="ta";
+  const phone=v=>/^[6-9]\d{9}$/.test(v.replace(/\D/g,"").slice(-10));
+  if(f.id==="pinForm"){const v=$("#pinIn").value.trim(),r=$("#pinRes");const x=/^\d{6}$/.test(v)&&eta(v);
+    if(!x){r.className="res bad";r.textContent=L?"சரியான 6 இலக்க பின்கோடு கொடுங்கள்":"Enter a valid 6-digit PIN code";return;}
+    r.className="res ok";r.textContent=`✓ ${L?"டெலிவரி கிடைக்கும்":"Delivery available"} (${x[3]}): ${x[2]}. ${totals().s>=FREE||byId(curP).price>=FREE?(L?"இலவச டெலிவரி.":"Free shipping."):(L?"₹1,500க்கு மேல் இலவசம்.":"Free above ₹1,500.")}`;return;}
+  if(f.id==="trkF"){renderTrack($("#trkI").value);return;}
+  if(f.id==="contactForm"){if(!validate(f,[["c-name",v=>v.length>1,L?"பெயரை உள்ளிடவும்":"Please enter your name"],["c-phone",phone,L?"10 இலக்க மொபைல் எண்":"Enter a 10-digit mobile number"],["c-msg",v=>v.length>4,L?"சிறு செய்தி எழுதவும்":"Please write a short message"]]))return;f.reset();toast(L?"நன்றி! தளம் தொடங்கியதும் செய்திகள் கடைக்கு வரும்.":"Thank you. Messages reach the shop once the site is live.");}
+  if(f.id==="coForm"){
+    if(!validate(f,[["f-name",v=>v.length>1,L?"பெயரை உள்ளிடவும்":"Enter the receiver's name"],["f-phone",v=>/^[6-9]\d{9}$/.test(v),L?"10 இலக்க மொபைல் எண்":"Enter a 10-digit mobile number"],["f-email",v=>!v||/^\S+@\S+\.\S+$/.test(v),L?"மின்னஞ்சலைச் சரிபார்க்கவும்":"Check the email address"],["f-addr",v=>v.length>4,L?"முகவரியை உள்ளிடவும்":"Enter house number and street"],["f-city",v=>v.length>1,L?"ஊரை உள்ளிடவும்":"Enter your town or city"],["f-pin",v=>/^\d{6}$/.test(v),L?"பின்கோடு 6 இலக்கம்":"PIN code has 6 digits"]]))return;
+    const v=id=>f.querySelector("#"+id).value.trim(),T2=totals(),x=eta(v("f-pin"))||[3,6];
+    pay({id:"SBT"+String(Date.now()).slice(-6),ts:Date.now(),days:x[1],name:v("f-name"),addr:v("f-addr"),city:v("f-city"),pin:v("f-pin"),method:f.pm.value,items:cart.map(i=>({...i})),coupon,disc:T2.d,gift,total:T2.total});
+  }
+});
+addEventListener("scroll",()=>{$("#hdr").classList.toggle("scrolled",scrollY>10);$("#toTop").classList.toggle("show",scrollY>900);},{passive:true});
+
+/* offer countdown */
+function tick(){
+  const ms=OFFER_END-Date.now();
+  if(ms<=0){$("#offer").innerHTML=`<span>${t("free_ship")} · ${lang==="ta"?"ஆண்டிபட்டியில் கையால் நெய்தது":"Woven by hand in Aundipatti, Theni"}</span>`;return false;}
+  const s=Math.floor(ms/1000),p=n=>String(n).padStart(2,"0");
+  $("#cd").innerHTML=`<b>${Math.floor(s/86400)}</b>d <b>${p(Math.floor(s%86400/3600))}</b>h <b>${p(Math.floor(s%3600/60))}</b>m <b>${p(s%60)}</b>s`;return true;
+}
+if(tick())setInterval(tick,1000);
+
+/* scroll reveal */
+let io=null;
+function observe(){
+  const els=$$(".rv:not(.seen)");
+  if(!("IntersectionObserver" in window)||reduce){els.forEach(x=>x.classList.add("seen"));return;}
+  io=io||new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add("seen");io.unobserve(en.target);}}),{threshold:.12,rootMargin:"0px 0px -30px 0px"});
+  els.forEach(x=>io.observe(x));
+}
+setTimeout(()=>$$(".rv:not(.seen)").forEach(x=>{if(x.getBoundingClientRect().top<innerHeight)x.classList.add("seen")}),1500);
+
+setupWA();applyLang();
+requestAnimationFrame(()=>requestAnimationFrame(()=>document.documentElement.classList.add("loaded")));
+</script>
+
+</body>
+</html>
